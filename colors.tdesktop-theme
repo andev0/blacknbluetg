@@ -22,6 +22,7 @@ themeLightButtonBg:                 themeButtonBg; // background for all light b
 themeLightButtonBgOver:             themeButtonBgOver; // background for all light buttons when hovered.
 themeSeparator:                     #232323; // separator color for menus.
 themeError:                         #f53d46; // color of elements that shows error.
+themeAttention:                     #ff274b; // color for attention buttons and other elements.
 themeScrollbar:                     #ffffff16; // color for scrollbars.
 themeImageBg:                       #000000; // image background (when photo size is less than minimum allowed).
 themeImageTransparencyBg:           #ffffff; // image background when displaying an image with opacity where no opacity is needed.
@@ -29,6 +30,7 @@ themeShadowColor:                   #000000b8; // all shadows' color.
 themeShadowColorNoAlpha:            #000000; // all shadows' color when alpha channel is not supported.
 themeLoaderFg:                      #ffffff5c; // default radial loader line (like in Media Viewer when loading a photo)
 themeLoaderBg:                      #00000084; // default radial loader background (like in Media Viewer when loading a photo)
+themeTransparent:                   #00000000; // absolutely transparent color.
 
 // GLOBAL
 
@@ -78,7 +80,7 @@ lightButtonFg:                      themeLightButtonFg; // default light button 
 lightButtonFgOver:                  themeLightButtonFg; // default light button text with mouse over
 attentionButtonFg:                  activeButtonFg; // default attention button text (like confirm button on log out)
 attentionButtonFgOver:              themeActiveFg; // default attention button text with mouse over
-attentionButtonBgOver:              themeButtonBgOver; // default attention button background with mouse over
+attentionButtonBgOver:              themeAttention; // default attention button background with mouse over
 attentionButtonBgRipple:            themeButtonBg; // default attention button ripple effect
 outlineButtonBg:                    themeBg; // default left outlined button background (like shared media links in profiles)
 outlineButtonBgOver:                themeBgOver; // default left outlined button background with mouse over
@@ -126,27 +128,27 @@ tooltipBorderFg:                    themeDark; // tooltip border
 
 // CHROMEBAR
 
-titleShadow:                        #00000003; // one pixel line shadow at the bottom of custom window title
-titleBg:                            #3a4047; // custom window title background when window is inactive
-titleBgActive:                      titleBg; // custom window title background when window is active
+titleShadow:                        themeTransparent; // one pixel line shadow at the bottom of custom window title
+titleBg:                            themeBg; // custom window title background when window is inactive
+titleBgActive:                      themeBgOver; // custom window title background when window is active
 titleButtonBg:                      titleBg; // custom window title minimize/maximize/restore button background when window is inactive (Windows only)
-titleButtonFg:                      #8b9096; // custom window title minimize/maximize/restore button icon when window is inactive (Windows only)
-titleButtonBgOver:                  #4c535b; // custom window title minimize/maximize/restore button background with mouse over when window is inactive (Windows only)
-titleButtonFgOver:                  #e0e0e0; // custom window title minimize/maximize/restore button icon with mouse over when window is inactive (Windows only)
-titleButtonBgActive:                titleButtonBg; // custom window title minimize/maximize/restore button background when window is active (Windows only)
+titleButtonFg:                      themeSecondaryFg; // custom window title minimize/maximize/restore button icon when window is inactive (Windows only)
+titleButtonBgOver:                  themeBg; // custom window title minimize/maximize/restore button background with mouse over when window is inactive (Windows only)
+titleButtonFgOver:                  themeActiveFg; // custom window title minimize/maximize/restore button icon with mouse over when window is inactive (Windows only)
+titleButtonBgActive:                titleBgActive; // custom window title minimize/maximize/restore button background when window is active (Windows only)
 titleButtonFgActive:                titleButtonFg; // custom window title minimize/maximize/restore button icon when window is active (Windows only)
 titleButtonBgActiveOver:            titleButtonBgOver; // custom window title minimize/maximize/restore button background with mouse over when window is active (Windows only)
 titleButtonFgActiveOver:            titleButtonFgOver; // custom window title minimize/maximize/restore button icon with mouse over when window is active (Windows only)
 titleButtonCloseBg:                 titleButtonBg; // custom window title close button background when window is inactive (Windows only)
 titleButtonCloseFg:                 titleButtonFg; // custom window title close button icon when window is inactive (Windows only)
-titleButtonCloseBgOver:             #e81123; // custom window title close button background with mouse over when window is inactive (Windows only)
+titleButtonCloseBgOver:             themeAttention; // custom window title close button background with mouse over when window is inactive (Windows only)
 titleButtonCloseFgOver:             windowFgActive; // custom window title close button icon with mouse over when window is inactive (Windows only)
-titleButtonCloseBgActive:           titleButtonCloseBg; // custom window title close button background when window is active (Windows only)
+titleButtonCloseBgActive:           titleButtonBgActive; // custom window title close button background when window is active (Windows only)
 titleButtonCloseFgActive:           titleButtonCloseFg; // custom window title close button icon when window is active (Windows only)
 titleButtonCloseBgActiveOver:       titleButtonCloseBgOver; // custom window title close button background with mouse over when window is active (Windows only)
 titleButtonCloseFgActiveOver:       titleButtonCloseFgOver; // custom window title close button icon with mouse over when window is active (Windows only)
-titleFg:                            #666666; // custom window title text when window is inactive (macOS only)
-titleFgActive:                      #808080; // custom window title text when window is active (macOS only)
+titleFg:                            themeSecondaryFg; // custom window title text when window is inactive (macOS only)
+titleFgActive:                      themeActiveFg; // custom window title text when window is active (macOS only)
 
 // TRAY COUNTER
 
