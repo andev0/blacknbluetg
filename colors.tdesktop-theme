@@ -50,10 +50,17 @@ shadowFg:                           themeShadowColor; // most shadows (including
 slideFadeOutBg:                     themeShadowColor; // slide animation (chat to profile) fade out filling
 slideFadeOutShadowFg:               themeShadowColor; // slide animation (chat to profile) fade out right section shadow
 
-// TODO: ADD THIS TO CHAT COLORS
+// FOLDERS LIST
 
-imageBg:                            themeImageBg; // image background fallback (when photo size is less than minimum allowed)
-imageBgTransparent:                 themeImageTransparencyBg; // image background when displaying an image with opacity where no opacity is needed
+sideBarBg:                          themeBgOver; // filters side bar background
+sideBarBgActive:                    themeBg; // filters side bar active background
+sideBarBgRipple:                    themeBg; // filters side bar ripple effect
+sideBarTextFg:                      themeSecondaryFg; // filters side bar text
+sideBarTextFgActive:                themeActiveFg; // filters side bar active item text
+sideBarIconFg:                      sideBarTextFg; // filters side bar icon
+sideBarIconFgActive:                sideBarTextFgActive; // filters side bar active item icon
+sideBarBadgeBg:                     themeContrastFg; // filters side bar badge background
+sideBarBadgeBgMuted:                sideBarTextFg; // filters side bar unimportant badge background
 
 // GLOBAL BUTTONS
 
@@ -78,11 +85,6 @@ outlineButtonBgOver:                themeBgOver; // default left outlined button
 outlineButtonOutlineFg:             themeBgOver; // default left outlined button left outline border
 outlineButtonBgRipple:              themeBg; // default left outlined button ripple effect
 
-// TODO: PUT IT SOMEWHERE WITH INPUT FIELDS COLORS DECLARATIONS
-
-activeLineFg:                       themeContrastFg; // default active line (like code input field bottom border when you log in and field is focused)
-activeLineFgError:                  themeError; // default active line for error state (like code input field bottom border when you log in and you've entered incorrect code)
-
 // POPUP MENU
 
 menuBg:                             themeBg; // default popup menu background
@@ -103,10 +105,10 @@ scrollBgOver:                       themeScrollbar; // default scroll bar backgr
 smallCloseIconFg:                   themeButtonBg; // small X icon (like in Show all sessions box to the right for sessions termination)
 smallCloseIconFgOver:               themeButtonBgOver; // small X icon with mouse over
 
-// TODO: PUT IT TO THE MEDIA PLAYER COLORS
+// INPUT FIELDS
 
-radialFg:                           themeLoaderFg; // default radial loader line (like in Media Viewer when loading a photo)
-radialBg:                           themeLoaderBg; // default radial loader background (like in Media Viewer when loading a photo)
+activeLineFg:                       themeContrastFg; // default active line (like code input field bottom border when you log in and field is focused)
+activeLineFgError:                  themeError; // default active line for error state (like code input field bottom border when you log in and you've entered incorrect code)
 placeholderFg:                      themeSecondaryFg; // default input field placeholder when field is not focused (like in phone input field when you log in)
 placeholderFgActive:                themeDark; // default input field placeholder when field is focused
 inputBorderFg:                      themeSecondaryFg; // default input field bottom border (like in code input field when you log in and field is not focused)
@@ -146,45 +148,16 @@ titleButtonCloseFgActiveOver:       titleButtonCloseFgOver; // custom window tit
 titleFg:                            #666666; // custom window title text when window is inactive (macOS only)
 titleFgActive:                      #808080; // custom window title text when window is active (macOS only)
 
+// TRAY COUNTER
+
 trayCounterBg:                      #f23c34; // tray icon counter background
 trayCounterBgMute:                  #888888; // tray icon counter background if all unread messages are muted
 trayCounterFg:                      #ffffff; // tray icon counter text
 trayCounterBgMacInvert:             #ffffff; // tray icon counter background when tray icon is pressed or when dark theme of macOS is used (macOS only)
 trayCounterFgMacInvert:             #ffffff01; // tray icon counter text when tray icon is pressed or when dark theme of macOS is used (macOS only)
-layerBg:                            #0000007f; // box and main menu background layer fade
-cancelIconFg:                       #666666; // default for settings close icon and box search cancel icon
-cancelIconFgOver:                   #dcdcdc; // default for settings close icon and box search cancel icon with mouse over
-boxBg:                              windowBg; // box background
-boxTextFg:                          windowFg; // box text
-boxTextFgGood:                      #6cc578; // accepted box text (like when choosing username that is not occupied)
-boxTextFgError:                     #d84d4d; // rejecting box text (like when choosing username that is occupied)
-boxTitleFg:                         #ebebeb; // box title text
-boxSearchBg:                        #282e33; // box search field background (like in contacts box)
-boxTitleAdditionalFg:               #808080; // box title additional text (like in create group box when you see chosen members count)
-boxTitleCloseFg:                    cancelIconFg; // settings close icon and box search cancel icon (like in contacts box)
-boxTitleCloseFgOver:                cancelIconFgOver; // settings close icon and box search cancel icon (like in contacts box) with mouse over
-membersAboutLimitFg:                #5e6065; // text in channel members box about the limit (max 200 last members are shown)
-contactsBg:                         #222528; // contacts (and some other) box row background
-contactsBgOver:                     #282e33; // contacts (and some other) box row background with mouse over
-contactsNameFg:                     boxTextFg; // contacts (and some other) box row name text
-contactsStatusFg:                   #808080; // contacts (and some other) box row additional text (like last seen stamp)
-contactsStatusFgOver:               #808080; // contacts (and some other) box row additional text (like last seen stamp) with mouse over
-contactsStatusFgOnline:             #6fcf7c; // contacts (and some other) box row active additional text (like online status)
-photoCropFadeBg:                    layerBg; // avatar crop box fade background (when choosing a new photo in Settings or for a group)
-photoCropPointFg:                   #ffffff7f; // avatar crop box corner rectangles (when choosing a new photo in Settings or for a group)
-callArrowFg:                        #45a552; // received phone call arrow (in calls list box)
-callArrowMissedFg:                  #dd5b4a; // missed phone call arrow (in calls list box)
-introBg:                            themeBg; // login background
-introTitleFg:                       #eeeeee; // login title text
-introDescriptionFg:                 #999999; // login description text
-introErrorFg:                       #999999; // login error text (like when providing a wrong log in code)
-introCoverTopBg:                    #29682f; // intro gradient top (from)
-introCoverBottomBg:                 #29682f; // intro gradient bottom (to)
-introCoverIconsFg:                  #418447; // intro cloud graphics
-introCoverPlaneTrace:               #3e7e44; // intro plane traces
-introCoverPlaneInner:               #ced9e2; // intro plane part
-introCoverPlaneOuter:               #97a9b5; // intro plane part
-introCoverPlaneTop:                 #ffffff; // intro plane part
+
+// CHATS LIST
+
 dialogsMenuIconFg:                  themeButtonBg; // main menu and lock telegram icon
 dialogsMenuIconFgOver:              themeButtonBgOver; // main menu and lock telegram icon with mouse over
 dialogsBg:                          themeBg; // chat list background
@@ -235,6 +208,53 @@ dialogsRippleBg:                    themeBg; //
 dialogsRippleBgActive:              themeBg; // 
 dialogsForwardBg:                   dialogsBgActive; // forwarding panel background (when forwarding messages in the smallest window size)
 dialogsForwardFg:                   dialogsNameFgActive; // forwarding panel text (when forwarding messages in the smallest window size)
+
+// TODO: PUT IT TO THE MEDIA PLAYER COLORS
+
+radialFg:                           themeLoaderFg; // default radial loader line (like in Media Viewer when loading a photo)
+radialBg:                           themeLoaderBg; // default radial loader background (like in Media Viewer when loading a photo)
+
+// TODO: ADD THIS TO CHAT COLORS
+
+imageBg:                            themeImageBg; // image background fallback (when photo size is less than minimum allowed)
+imageBgTransparent:                 themeImageTransparencyBg; // image background when displaying an image with opacity where no opacity is needed
+
+// UNSORTED
+
+layerBg:                            #0000007f; // box and main menu background layer fade
+cancelIconFg:                       #666666; // default for settings close icon and box search cancel icon
+cancelIconFgOver:                   #dcdcdc; // default for settings close icon and box search cancel icon with mouse over
+boxBg:                              windowBg; // box background
+boxTextFg:                          windowFg; // box text
+boxTextFgGood:                      #6cc578; // accepted box text (like when choosing username that is not occupied)
+boxTextFgError:                     #d84d4d; // rejecting box text (like when choosing username that is occupied)
+boxTitleFg:                         #ebebeb; // box title text
+boxSearchBg:                        #282e33; // box search field background (like in contacts box)
+boxTitleAdditionalFg:               #808080; // box title additional text (like in create group box when you see chosen members count)
+boxTitleCloseFg:                    cancelIconFg; // settings close icon and box search cancel icon (like in contacts box)
+boxTitleCloseFgOver:                cancelIconFgOver; // settings close icon and box search cancel icon (like in contacts box) with mouse over
+membersAboutLimitFg:                #5e6065; // text in channel members box about the limit (max 200 last members are shown)
+contactsBg:                         #222528; // contacts (and some other) box row background
+contactsBgOver:                     #282e33; // contacts (and some other) box row background with mouse over
+contactsNameFg:                     boxTextFg; // contacts (and some other) box row name text
+contactsStatusFg:                   #808080; // contacts (and some other) box row additional text (like last seen stamp)
+contactsStatusFgOver:               #808080; // contacts (and some other) box row additional text (like last seen stamp) with mouse over
+contactsStatusFgOnline:             #6fcf7c; // contacts (and some other) box row active additional text (like online status)
+photoCropFadeBg:                    layerBg; // avatar crop box fade background (when choosing a new photo in Settings or for a group)
+photoCropPointFg:                   #ffffff7f; // avatar crop box corner rectangles (when choosing a new photo in Settings or for a group)
+callArrowFg:                        #45a552; // received phone call arrow (in calls list box)
+callArrowMissedFg:                  #dd5b4a; // missed phone call arrow (in calls list box)
+introBg:                            themeBg; // login background
+introTitleFg:                       #eeeeee; // login title text
+introDescriptionFg:                 #999999; // login description text
+introErrorFg:                       #999999; // login error text (like when providing a wrong log in code)
+introCoverTopBg:                    #29682f; // intro gradient top (from)
+introCoverBottomBg:                 #29682f; // intro gradient bottom (to)
+introCoverIconsFg:                  #418447; // intro cloud graphics
+introCoverPlaneTrace:               #3e7e44; // intro plane traces
+introCoverPlaneInner:               #ced9e2; // intro plane part
+introCoverPlaneOuter:               #97a9b5; // intro plane part
+introCoverPlaneTop:                 #ffffff; // intro plane part
 searchedBarBg:                      #3a4047; // search results bar background (in chats list, contacts box..)
 searchedBarFg:                      #a8a8a8; // search results bar text (in chats list, contacts box..)
 topBarBg:                           #282e33; // top bar background (in chat view, media overview..)
@@ -504,12 +524,3 @@ botKbDownBg:                        #494f55; // bot keyboard button ripple effec
 emojiIconFg:                        #6c7278; // emoji category icon
 emojiIconFgActive:                  #4faf59; // active emoji category icon
 overviewCheckBorder:                #e4eaef; // shared media round checkbox border
-sideBarBg:                          themeBgOver; // filters side bar background
-sideBarBgActive:                    themeBg; // filters side bar active background
-sideBarBgRipple:                    themeBg; // filters side bar ripple effect
-sideBarTextFg:                      themeSecondaryFg; // filters side bar text
-sideBarTextFgActive:                themeActiveFg; // filters side bar active item text
-sideBarIconFg:                      sideBarTextFg; // filters side bar icon
-sideBarIconFgActive:                sideBarTextFgActive; // filters side bar active item icon
-sideBarBadgeBg:                     themeContrastFg; // filters side bar badge background
-sideBarBadgeBgMuted:                sideBarTextFg; // filters side bar unimportant badge background
