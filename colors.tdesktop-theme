@@ -265,19 +265,27 @@ photoCropPointFg:                   themeLoaderFg; // avatar crop box corner rec
 callArrowFg:                        themeSuccess; // received phone call arrow (in calls list box)
 callArrowMissedFg:                  themeError; // missed phone call arrow (in calls list box)
 
-//UNSORTED
+// LOGIN
 
 introBg:                            themeBg; // login background
-introTitleFg:                       #eeeeee; // login title text
-introDescriptionFg:                 #999999; // login description text
-introErrorFg:                       #999999; // login error text (like when providing a wrong log in code)
-introCoverTopBg:                    #29682f; // intro gradient top (from)
-introCoverBottomBg:                 #29682f; // intro gradient bottom (to)
-introCoverIconsFg:                  #418447; // intro cloud graphics
-introCoverPlaneTrace:               #3e7e44; // intro plane traces
-introCoverPlaneInner:               #ced9e2; // intro plane part
-introCoverPlaneOuter:               #97a9b5; // intro plane part
-introCoverPlaneTop:                 #ffffff; // intro plane part
+introTitleFg:                       themeSimpleFg; // login title text
+introDescriptionFg:                 themeSimpleFg; // login description text
+
+// I TRIED TO FAIL LOGINNING IN BUT I DIDN'T SEE THIS COLOR
+// INFORM ME IF YOU DID
+
+introErrorFg:                       themeError; // login error text (like when providing a wrong log in code)
+
+introCoverTopBg:                    themeBgOver; // intro gradient top (from)
+introCoverBottomBg:                 themeBg; // intro gradient bottom (to)
+introCoverIconsFg:                  themeContrastFg; // intro cloud graphics
+introCoverPlaneTrace:               themeDark; // intro plane traces
+introCoverPlaneInner:               themeDark; // intro plane part
+introCoverPlaneOuter:               themeSimpleFg; // intro plane part
+introCoverPlaneTop:                 themeSimpleFg; // intro plane part
+
+// UNSORTED
+
 searchedBarBg:                      #3a4047; // search results bar background (in chats list, contacts box..)
 searchedBarFg:                      #a8a8a8; // search results bar text (in chats list, contacts box..)
 topBarBg:                           #282e33; // top bar background (in chat view, media overview..)
