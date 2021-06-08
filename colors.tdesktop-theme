@@ -260,10 +260,13 @@ contactsStatusFgOnline:             themeContrastFg; // contacts (and some other
 photoCropFadeBg:                    themeLoaderBg; // avatar crop box fade background (when choosing a new photo in Settings or for a group)
 photoCropPointFg:                   themeLoaderFg; // avatar crop box corner rectangles (when choosing a new photo in Settings or for a group)
 
-// UNSORTED
+// CALLS LIST
 
-callArrowFg:                        #45a552; // received phone call arrow (in calls list box)
-callArrowMissedFg:                  #dd5b4a; // missed phone call arrow (in calls list box)
+callArrowFg:                        themeSuccess; // received phone call arrow (in calls list box)
+callArrowMissedFg:                  themeError; // missed phone call arrow (in calls list box)
+
+//UNSORTED
+
 introBg:                            themeBg; // login background
 introTitleFg:                       #eeeeee; // login title text
 introDescriptionFg:                 #999999; // login description text
