@@ -255,10 +255,13 @@ contactsStatusFg:                   themeSecondaryFg; // contacts (and some othe
 contactsStatusFgOver:               themeActiveFg; // contacts (and some other) box row additional text (like last seen stamp) with mouse over
 contactsStatusFgOnline:             themeContrastFg; // contacts (and some other) box row active additional text (like online status)
 
+// PHOTO CROP
+
+photoCropFadeBg:                    themeLoaderBg; // avatar crop box fade background (when choosing a new photo in Settings or for a group)
+photoCropPointFg:                   themeLoaderFg; // avatar crop box corner rectangles (when choosing a new photo in Settings or for a group)
+
 // UNSORTED
 
-photoCropFadeBg:                    layerBg; // avatar crop box fade background (when choosing a new photo in Settings or for a group)
-photoCropPointFg:                   #ffffff7f; // avatar crop box corner rectangles (when choosing a new photo in Settings or for a group)
 callArrowFg:                        #45a552; // received phone call arrow (in calls list box)
 callArrowMissedFg:                  #dd5b4a; // missed phone call arrow (in calls list box)
 introBg:                            themeBg; // login background
