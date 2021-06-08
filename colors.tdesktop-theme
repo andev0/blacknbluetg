@@ -84,7 +84,7 @@ attentionButtonFgOver:              themeActiveFg; // default attention button t
 attentionButtonBgOver:              themeAttention; // default attention button background with mouse over
 attentionButtonBgRipple:            themeButtonBg; // default attention button ripple effect
 
-// I CAN'T FIND THESE ELEMENTS
+// I CAN NOT FIND THESE ELEMENTS
 // IF YOU KNOW WHERE THEY ARE LOCATED - PLEASE, INFORM ME
 
 outlineButtonBg:                    themeBg; // default left outlined button background (like shared media links in profiles)
@@ -214,7 +214,7 @@ dialogsOnlineBadgeFgActive:         themeActiveFg; // chat list online status fo
 dialogsRippleBg:                    themeBg; // 
 dialogsRippleBgActive:              themeBg; // 
 
-// I CAN'T FIND THESE ELEMENTS
+// I CAN NOT FIND THESE ELEMENTS
 // IF YOU KNOW WHERE THEY ARE LOCATED - PLEASE, INFORM ME
 
 dialogsForwardBg:                   themeBg; // forwarding panel background (when forwarding messages in the smallest window size)
@@ -244,16 +244,19 @@ boxSearchBg:                        themeBg; // box search field background (lik
 boxTitleAdditionalFg:               themeSecondaryFg; // box title additional text (like in create group box when you see chosen members count)
 boxTitleCloseFg:                    cancelIconFg; // settings close icon and box search cancel icon (like in contacts box)
 boxTitleCloseFgOver:                cancelIconFgOver; // settings close icon and box search cancel icon (like in contacts box) with mouse over
+membersAboutLimitFg:                themeError; // text in channel members box about the limit (max 200 last members are shown)
+
+// CONTACTS MENU
+
+contactsBg:                         themeBg; // contacts (and some other) box row background
+contactsBgOver:                     themeBgOver; // contacts (and some other) box row background with mouse over
+contactsNameFg:                     boxTextFg; // contacts (and some other) box row name text
+contactsStatusFg:                   themeSecondaryFg; // contacts (and some other) box row additional text (like last seen stamp)
+contactsStatusFgOver:               themeActiveFg; // contacts (and some other) box row additional text (like last seen stamp) with mouse over
+contactsStatusFgOnline:             themeContrastFg; // contacts (and some other) box row active additional text (like online status)
 
 // UNSORTED
 
-membersAboutLimitFg:                #5e6065; // text in channel members box about the limit (max 200 last members are shown)
-contactsBg:                         #222528; // contacts (and some other) box row background
-contactsBgOver:                     #282e33; // contacts (and some other) box row background with mouse over
-contactsNameFg:                     boxTextFg; // contacts (and some other) box row name text
-contactsStatusFg:                   #808080; // contacts (and some other) box row additional text (like last seen stamp)
-contactsStatusFgOver:               #808080; // contacts (and some other) box row additional text (like last seen stamp) with mouse over
-contactsStatusFgOnline:             #6fcf7c; // contacts (and some other) box row active additional text (like online status)
 photoCropFadeBg:                    layerBg; // avatar crop box fade background (when choosing a new photo in Settings or for a group)
 photoCropPointFg:                   #ffffff7f; // avatar crop box corner rectangles (when choosing a new photo in Settings or for a group)
 callArrowFg:                        #45a552; // received phone call arrow (in calls list box)
