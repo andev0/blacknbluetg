@@ -1,7 +1,7 @@
 // Description: Black&blue easy-to-customize theme for Telegram Desktop
-// Version: v0.1
+// Version: v0.1.1
 // Repository: https://github.com/fejalex/darknbluetg
-// Theme: https://t.me/addtheme/darknblueneon
+// Theme: https://t.me/addtheme/blacknbluetg
 // Author: FejAleX
 
 // THEME VARIABLES
@@ -82,6 +82,10 @@ attentionButtonFg:                  activeButtonFg; // default attention button 
 attentionButtonFgOver:              themeActiveFg; // default attention button text with mouse over
 attentionButtonBgOver:              themeAttention; // default attention button background with mouse over
 attentionButtonBgRipple:            themeButtonBg; // default attention button ripple effect
+
+// I CAN'T FIND THESE ELEMENTS
+// IF YOU KNOW WHERE THEY ARE LOCATED - PLEASE, INFORM ME
+
 outlineButtonBg:                    themeBg; // default left outlined button background (like shared media links in profiles)
 outlineButtonBgOver:                themeBgOver; // default left outlined button background with mouse over
 outlineButtonOutlineFg:             themeBgOver; // default left outlined button left outline border
@@ -152,11 +156,11 @@ titleFgActive:                      themeActiveFg; // custom window title text w
 
 // TRAY COUNTER
 
-trayCounterBg:                      #f23c34; // tray icon counter background
-trayCounterBgMute:                  #888888; // tray icon counter background if all unread messages are muted
-trayCounterFg:                      #ffffff; // tray icon counter text
-trayCounterBgMacInvert:             #ffffff; // tray icon counter background when tray icon is pressed or when dark theme of macOS is used (macOS only)
-trayCounterFgMacInvert:             #ffffff01; // tray icon counter text when tray icon is pressed or when dark theme of macOS is used (macOS only)
+trayCounterBg:                      themeBgOver; // tray icon counter background
+trayCounterBgMute:                  themeBg; // tray icon counter background if all unread messages are muted
+trayCounterFg:                      themeActiveFg; // tray icon counter text
+trayCounterBgMacInvert:             trayCounterBg; // tray icon counter background when tray icon is pressed or when dark theme of macOS is used (macOS only)
+trayCounterFgMacInvert:             trayCounterFg; // tray icon counter text when tray icon is pressed or when dark theme of macOS is used (macOS only)
 
 // CHATS LIST
 
@@ -200,16 +204,20 @@ dialogsTextFgActive:                windowFgActive; // chat list message text fo
 dialogsTextFgServiceActive:         dialogsTextFgActive; // chat list group sender name text for current (active) chat
 dialogsVerifiedIconBgActive:        dialogsTextFgActive; // chat list verified icon background for current (active) chat
 dialogsVerifiedIconFgActive:        dialogsBgActive; // chat list verified icon check for current (active) chat
-dialogsSendingIconFgActive:         #ffffff99; // chat list sending message icon (clock) for current (active) chat
+dialogsSendingIconFgActive:         themeActiveFg; // chat list sending message icon (clock) for current (active) chat
 dialogsSentIconFgActive:            dialogsTextFgActive; // chat list sent message tick / double tick icon for current (active) chat
 dialogsUnreadBgActive:              themeButtonBg; // chat list unread badge background for not muted chat for current (active) chat
 dialogsUnreadBgMutedActive:         themeBg; // chat list unread badge background for muted chat for current (active) chat
 dialogsUnreadFgActive:              themeActiveFg; // chat list unread badge text for current (active) chat
-dialogsOnlineBadgeFgActive:         #ffffff; // chat list online status for current (active) chat
+dialogsOnlineBadgeFgActive:         themeActiveFg; // chat list online status for current (active) chat
 dialogsRippleBg:                    themeBg; // 
 dialogsRippleBgActive:              themeBg; // 
-dialogsForwardBg:                   dialogsBgActive; // forwarding panel background (when forwarding messages in the smallest window size)
-dialogsForwardFg:                   dialogsNameFgActive; // forwarding panel text (when forwarding messages in the smallest window size)
+
+// I CAN'T FIND THESE ELEMENTS
+// IF YOU KNOW WHERE THEY ARE LOCATED - PLEASE, INFORM ME
+
+dialogsForwardBg:                   themeBg; // forwarding panel background (when forwarding messages in the smallest window size)
+dialogsForwardFg:                   themeSecondaryFg; // forwarding panel text (when forwarding messages in the smallest window size)
 
 // TODO: PUT IT TO THE MEDIA PLAYER COLORS
 
