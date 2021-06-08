@@ -21,7 +21,8 @@ themeLightButtonFg:                 themeButtonFg; // color for light buttons' t
 themeLightButtonBg:                 themeButtonBg; // background for all light buttons.
 themeLightButtonBgOver:             themeButtonBgOver; // background for all light buttons when hovered.
 themeSeparator:                     #232323; // separator color for menus.
-themeError:                         #f53d46; // color of elements that shows error.
+themeSuccess:                       #64db64; // color of elements that show success.
+themeError:                         #f53d46; // color of elements that show error.
 themeAttention:                     #ff274b; // color for attention buttons and other elements.
 themeScrollbar:                     #ffffff16; // color for scrollbars.
 themeImageBg:                       #000000; // image background (when photo size is less than minimum allowed).
@@ -229,20 +230,23 @@ radialBg:                           themeLoaderBg; // default radial loader back
 imageBg:                            themeImageBg; // image background fallback (when photo size is less than minimum allowed)
 imageBgTransparent:                 themeImageTransparencyBg; // image background when displaying an image with opacity where no opacity is needed
 
-// UNSORTED
+// BOX MENU
 
-layerBg:                            #0000007f; // box and main menu background layer fade
-cancelIconFg:                       #666666; // default for settings close icon and box search cancel icon
-cancelIconFgOver:                   #dcdcdc; // default for settings close icon and box search cancel icon with mouse over
+layerBg:                            themeLoaderBg; // box and main menu background layer fade
+cancelIconFg:                       themeContrastFg; // default for settings close icon and box search cancel icon
+cancelIconFgOver:                   themeActiveFg; // default for settings close icon and box search cancel icon with mouse over
 boxBg:                              windowBg; // box background
 boxTextFg:                          windowFg; // box text
-boxTextFgGood:                      #6cc578; // accepted box text (like when choosing username that is not occupied)
-boxTextFgError:                     #d84d4d; // rejecting box text (like when choosing username that is occupied)
-boxTitleFg:                         #ebebeb; // box title text
-boxSearchBg:                        #282e33; // box search field background (like in contacts box)
-boxTitleAdditionalFg:               #808080; // box title additional text (like in create group box when you see chosen members count)
+boxTextFgGood:                      themeSuccess; // accepted box text (like when choosing username that is not occupied)
+boxTextFgError:                     themeError; // rejecting box text (like when choosing username that is occupied)
+boxTitleFg:                         themeContrastFg; // box title text
+boxSearchBg:                        themeBg; // box search field background (like in contacts box)
+boxTitleAdditionalFg:               themeSecondaryFg; // box title additional text (like in create group box when you see chosen members count)
 boxTitleCloseFg:                    cancelIconFg; // settings close icon and box search cancel icon (like in contacts box)
 boxTitleCloseFgOver:                cancelIconFgOver; // settings close icon and box search cancel icon (like in contacts box) with mouse over
+
+// UNSORTED
+
 membersAboutLimitFg:                #5e6065; // text in channel members box about the limit (max 200 last members are shown)
 contactsBg:                         #222528; // contacts (and some other) box row background
 contactsBgOver:                     #282e33; // contacts (and some other) box row background with mouse over
