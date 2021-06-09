@@ -30,6 +30,7 @@ themeShadowColorNoAlpha:            #000000; // all shadows' color when alpha ch
 themeLoaderFg:                      #ffffff5c; // default radial loader line (like in Media Viewer when loading a photo)
 themeLoaderBg:                      #00000084; // default radial loader background (like in Media Viewer when loading a photo)
 themeTransparent:                   #00000000; // absolutely transparent color.
+themeMessageBg:                     #000000bd; // transparent black for message background.
 
 // GLOBAL
 
@@ -302,37 +303,49 @@ stickerPanDeleteBg:                 themeBgOver; // delete X button background f
 stickerPanDeleteFg:                 windowFgActive; // delete X button icon for custom sent stickers in stickers panel (legacy)
 stickerPreviewBg:                   themeLoaderBg; // sticker and GIF preview background (when you press and hold on a sticker)
 
-// UNSORTED
+// CHAT
 
-historyTextInFg:                    windowFg; // inbox message text
-historyTextInFgSelected:            #ffffff; // inbox message selected text or text in a selected message
-historyTextOutFg:                   #e4ecf2; // outbox message text
-historyTextOutFgSelected:           #ffffff; // outbox message selected text or text in a selected message
-historyLinkInFg:                    #5bcf66; // inbox message link
-historyLinkInFgSelected:            #beffc5; // inbox message link in a selected text or message
-historyLinkOutFg:                   #5bcf66; // outbox message link
-historyLinkOutFgSelected:           #beffc5; // outbox message link in a selected text or message
-historyFileNameInFg:                historyTextInFg; // inbox media filename text
-historyFileNameInFgSelected:        #ffffff; // inbox media filename text in a selected message
-historyFileNameOutFg:               historyTextOutFg; // outbox media filename text
-historyFileNameOutFgSelected:       #ffffff; // outbox media filename text in a selected message
-historyOutIconFg:                   #64d768; // outbox message tick / double tick icon
-historyOutIconFgSelected:           #ffffff; // outbox message tick / double tick icon in a selected message
-historyIconFgInverted:              #64d768; // media message tick / double tick icon (like in sent photo)
-historySendingOutIconFg:            #9eface; // outbox sending message icon (clock)
-historySendingInIconFg:             #76838b; // inbox sending message icon (clock) (like in sent messages to yourself or in sent messages to a channel)
-historySendingInvertedIconFg:       #ffffffc8; // media sending message icon (clock) (like in sent photo)
-historyCallArrowInFg:               #3f9d47; // received phone call arrow
-historyCallArrowInFgSelected:       #ffffff; // received phone call arrow in a selected message
+historyTextInFg:                    themeSimpleFg; // inbox message text
+historyTextInFgSelected:            themeActiveFg; // inbox message selected text or text in a selected message
+historyTextOutFg:                   themeContrastFg; // outbox message text
+historyTextOutFgSelected:           historyTextInFgSelected; // outbox message selected text or text in a selected message
+
+historyLinkInFg:                    historyTextOutFg; // inbox message link
+historyLinkInFgSelected:            historyTextInFgSelected; // inbox message link in a selected text or message
+historyLinkOutFg:                   historyTextInFg; // outbox message link
+historyLinkOutFgSelected:           historyTextInFgSelected; // outbox message link in a selected text or message
+
+historyFileNameInFg:                historyTextOutFg; // inbox media filename text
+historyFileNameInFgSelected:        historyTextInFgSelected; // inbox media filename text in a selected message
+historyFileNameOutFg:               historyTextInFg; // outbox media filename text
+historyFileNameOutFgSelected:       historyTextInFgSelected; // outbox media filename text in a selected message
+
+historyOutIconFg:                   themeSecondaryFg; // outbox message tick / double tick icon
+historyOutIconFgSelected:           historyTextInFgSelected; // outbox message tick / double tick icon in a selected message
+historyIconFgInverted:              historyOutIconFg; // media message tick / double tick icon (like in sent photo)
+
+historySendingOutIconFg:            historyOutIconFg; // outbox sending message icon (clock)
+historySendingInIconFg:             historySendingOutIconFg; // inbox sending message icon (clock) (like in sent messages to yourself or in sent messages to a channel)
+historySendingInvertedIconFg:       historySendingOutIconFg; // media sending message icon (clock) (like in sent photo)
+
+historyCallArrowInFg:               callArrowFg; // received phone call arrow
+historyCallArrowInFgSelected:       historyTextInFgSelected; // received phone call arrow in a selected message
 historyCallArrowMissedInFg:         callArrowMissedFg; // missed phone call arrow
-historyCallArrowMissedInFgSelected: #ffffff; // missed phone call arrow in a selected message
-historyCallArrowOutFg:              #ffffff; // outgoing phone call arrow
-historyCallArrowOutFgSelected:      #ffffff; // outgoing phone call arrow
-historyUnreadBarBg:                 #33393f; // new unread messages bar background
-historyUnreadBarBorder:             shadowFg; // new unread messages bar shadow
-historyUnreadBarFg:                 #56b860; // new unread messages bar text
-historyForwardChooseBg:             #0000004c; // forwarding messages in a large window size "choose recipient" background
-historyForwardChooseFg:             windowFgActive; // forwarding messages in a large window size "choose recipient" text
+historyCallArrowMissedInFgSelected: historyTextInFgSelected; // missed phone call arrow in a selected message
+historyCallArrowOutFg:              themeSimpleFg; // outgoing phone call arrow
+historyCallArrowOutFgSelected:      historyTextInFgSelected; // outgoing phone call arrow
+
+historyUnreadBarBg:                 themeMessageBg; // new unread messages bar background
+historyUnreadBarBorder:             themeActiveFg; // new unread messages bar shadow
+historyUnreadBarFg:                 themeActiveFg; // new unread messages bar text
+
+// GUESS WHAT. TELEGRAM FORGOT TO ADD THIS COLOR TO THE APP AGAIN.
+// I HATE SIMPLE TELEGRAM THEMES FROM THIS MOMENT.
+// IF I AM NOT RIGHT - PUNCH ME IN THE FACE.
+
+historyForwardChooseBg:             themeBg; // forwarding messages in a large window size "choose recipient" background
+historyForwardChooseFg:             themeSimpleFg; // forwarding messages in a large window size "choose recipient" text
+
 historyPeer1NameFg:                 #ec7577; // red group member name
 historyPeer1NameFgSelected:         #ffffff; // red group member name in a selected message
 historyPeer1UserpicBg:              #e17076; // red userpic background
@@ -362,9 +375,9 @@ historyScrollBarBg:                 #8989897a; // scroll bar current rectangle, 
 historyScrollBarBgOver:             #6b6b6bbc; // scroll bar current rectangle with mouse over it in the chat view (adjusted)
 historyScrollBg:                    #5f5f5f4c; // scroll bar background (adjusted)
 historyScrollBgOver:                #6262626b; // scroll bar background with mouse over the scroll bar (adjusted)
-msgInBg:                            #33393f; // inbox message background
+msgInBg:                            themeMessageBg; // inbox message background
 msgInBgSelected:                    #1f792b; // inbox selected message background (and background of selected text in those messages)
-msgOutBg:                           #2a2f33; // outbox message background
+msgOutBg:                           themeMessageBg; // outbox message background
 msgOutBgSelected:                   #1f792b; // outbox selected message background (and background of selected text in those messages)
 msgSelectOverlay:                   #52ba5d4c; // overlay which is filling the media parts of selected messages (like in selected photo message)
 msgStickerOverlay:                  #52ba5d7f; // overlay which is filling the selected sticker message
@@ -446,6 +459,9 @@ msgWaveformOutInactiveSelected:     #59b562; // outbox selected voice message in
 msgBotKbOverBgAdd:                  #ffffff14; // this is painted over a bot inline keyboard button (which has msgServiceBg background) when mouse is over that button
 msgBotKbIconFg:                     msgServiceFg; // bot inline keyboard button icon in the top-right corner (like in @vote bot when a poll is ready to be shared)
 msgBotKbRippleBg:                   #9e9d9d10; // bot inline keyboard button ripple effect
+
+// UNSORTED
+
 mediaInFg:                          msgInDateFg; // inbox media message status text (like in file that is being downloaded)
 mediaInFgSelected:                  msgInDateFgSelected; // inbox selected media message status text (like in file that is being downloaded)
 mediaOutFg:                         msgOutDateFg; // outbox media message status text (like in file that is being downloaded)
