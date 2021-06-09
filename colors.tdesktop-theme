@@ -282,10 +282,13 @@ introCoverPlaneInner:               themeDark; // intro plane part
 introCoverPlaneOuter:               themeSimpleFg; // intro plane part
 introCoverPlaneTop:                 themeSimpleFg; // intro plane part
 
+// SEARCH RESULTS IN SIDEBAR
+
+searchedBarBg:                      themeBgOver; // search results bar background (in chats list, contacts box..)
+searchedBarFg:                      themeContrastFg; // search results bar text (in chats list, contacts box..)
+
 // UNSORTED
 
-searchedBarBg:                      #3a4047; // search results bar background (in chats list, contacts box..)
-searchedBarFg:                      #a8a8a8; // search results bar text (in chats list, contacts box..)
 topBarBg:                           #282e33; // top bar background (in chat view, media overview..)
 emojiPanBg:                         windowBg; // emoji panel background
 emojiPanCategories:                 #20262b; // emoji panel categories background
