@@ -6,4 +6,4 @@ Please, note that the theme is an alpha version now, that means that many things
 
 At the moment, 220/456 colors were set up.
 
-![48% progress bar](https://progress-bar.dev/48/)
+![48% progress bar](https://progress-bar.dev/48/?title=220/456+colors&width=256&color=21262d)
