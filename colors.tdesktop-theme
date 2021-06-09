@@ -288,15 +288,22 @@ topBarBg:                           themeBg; // top bar background (in chat view
 imageBg:                            themeImageBg; // image background fallback (when photo size is less than minimum allowed)
 imageBgTransparent:                 themeImageTransparencyBg; // image background when displaying an image with opacity where no opacity is needed
 
-// UNSORTED
+// STICKERS PANEL
 
 emojiPanBg:                         windowBg; // emoji panel background
-emojiPanCategories:                 #20262b; // emoji panel categories background
-emojiPanHeaderFg:                   #90949a; // emoji panel section header text
-emojiPanHeaderBg:                   #fffffff2; // emoji panel section header background
-stickerPanDeleteBg:                 #000000cc; // delete X button background for custom sent stickers in stickers panel (legacy)
+emojiPanCategories:                 emojiPanBg; // emoji panel categories background
+emojiPanHeaderFg:                   themeContrastFg; // emoji panel section header text
+
+// THIS VARIABLE DOESN'T MAKE ANY CHANGES
+
+emojiPanHeaderBg:                   emojiPanBg; // emoji panel section header background
+
+stickerPanDeleteBg:                 themeBgOver; // delete X button background for custom sent stickers in stickers panel (legacy)
 stickerPanDeleteFg:                 windowFgActive; // delete X button icon for custom sent stickers in stickers panel (legacy)
-stickerPreviewBg:                   #000000b0; // sticker and GIF preview background (when you press and hold on a sticker)
+stickerPreviewBg:                   themeLoaderBg; // sticker and GIF preview background (when you press and hold on a sticker)
+
+// UNSORTED
+
 historyTextInFg:                    windowFg; // inbox message text
 historyTextInFgSelected:            #ffffff; // inbox message selected text or text in a selected message
 historyTextOutFg:                   #e4ecf2; // outbox message text
