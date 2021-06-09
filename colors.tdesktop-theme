@@ -223,11 +223,6 @@ dialogsForwardFg:                   themeSecondaryFg; // forwarding panel text (
 radialFg:                           themeLoaderFg; // default radial loader line (like in Media Viewer when loading a photo)
 radialBg:                           themeLoaderBg; // default radial loader background (like in Media Viewer when loading a photo)
 
-// TODO: ADD THIS TO CHAT COLORS
-
-imageBg:                            themeImageBg; // image background fallback (when photo size is less than minimum allowed)
-imageBgTransparent:                 themeImageTransparencyBg; // image background when displaying an image with opacity where no opacity is needed
-
 // BOX MENU
 
 layerBg:                            themeLoaderBg; // box and main menu background layer fade
@@ -287,9 +282,14 @@ introCoverPlaneTop:                 themeSimpleFg; // intro plane part
 searchedBarBg:                      themeBgOver; // search results bar background (in chats list, contacts box..)
 searchedBarFg:                      themeContrastFg; // search results bar text (in chats list, contacts box..)
 
+// CHAT
+
+topBarBg:                           themeBg; // top bar background (in chat view, media overview..)
+imageBg:                            themeImageBg; // image background fallback (when photo size is less than minimum allowed)
+imageBgTransparent:                 themeImageTransparencyBg; // image background when displaying an image with opacity where no opacity is needed
+
 // UNSORTED
 
-topBarBg:                           #282e33; // top bar background (in chat view, media overview..)
 emojiPanBg:                         windowBg; // emoji panel background
 emojiPanCategories:                 #20262b; // emoji panel categories background
 emojiPanHeaderFg:                   #90949a; // emoji panel section header text
