@@ -402,6 +402,18 @@ msgInServiceFgSelected:             themeActiveFg; // inbox selected message inf
 msgOutServiceFg:                    themeSimpleFg; // outbox message information text (like information about a forwarded message original sender)
 msgOutServiceFgSelected:            themeActiveFg; // outbox message information text (like information about a forwarded message original sender)
 
+// IF YOU WILL MAKE THIS COLORS NOT TRANSPARENT, SO BUGGED SQUARES WILL BE VISIBLE IN MESSGAES CORNERS
+
+msgInShadow:                        themeTransparent; // inbox message shadow (below the bubble)
+msgInShadowSelected:                themeTransparent; // inbox selected message shadow (below the bubble)
+msgOutShadow:                       themeTransparent; // outbox message shadow (below the bubble)
+msgOutShadowSelected:               themeTransparent; // outbox selected message shadow (below the bubble)
+
+msgInDateFg:                        themeSecondaryFg; // inbox message time text
+msgInDateFgSelected:                themeActiveFg; // inbox selected message time text
+msgOutDateFg:                       msgInDateFg; // outbox message time text
+msgOutDateFgSelected:               msgInDateFgSelected; // outbox selected message time text
+
 msgDateImgFg:                       msgServiceFg; // media message time text (like time text in a sent photo)
 msgDateImgBg:                       #00000054; // media message time bubble background (like time bubble in a sent photo) or file with thumbnail download icon circle background
 msgDateImgBgOver:                   #00000074; // media message download icon circle background with mouse over (like file with thumbnail download icon)
