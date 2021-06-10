@@ -28,6 +28,7 @@ themeFadeFg:                        #ffffff5c; // default radial loader line (li
 themeFadeBg:                        #00000084; // default radial loader background (like in Media Viewer when loading a photo)
 themeTransparent:                   #00000000; // absolutely transparent color.
 themeMessageBg:                     #000000bd; // transparent black for message background.
+themeImageOverlay:                  #244273ab; // overlay for images in messages that are selected and for background behind the selected message.
 
 themeRed:                           #ff5858; // red group member name and userpic background
 themeGreen:                         #87c281; // green group member name and userpic background
@@ -389,35 +390,13 @@ historyScrollBg:                    scrollBg; // scroll bar background (adjusted
 historyScrollBgOver:                scrollBgOver; // scroll bar background with mouse over the scroll bar (adjusted)
 
 msgInBg:                            themeMessageBg; // inbox message background
-msgInBgSelected:                    #1f792b; // inbox selected message background (and background of selected text in those messages)
+msgInBgSelected:                    themeDark; // inbox selected message background (and background of selected text in those messages)
 msgOutBg:                           themeMessageBg; // outbox message background
-msgOutBgSelected:                   #1f792b; // outbox selected message background (and background of selected text in those messages)
-msgSelectOverlay:                   #52ba5d4c; // overlay which is filling the media parts of selected messages (like in selected photo message)
-msgStickerOverlay:                  #52ba5d7f; // overlay which is filling the selected sticker message
-msgInServiceFg:                     windowActiveTextFg; // inbox message information text (like information about a forwarded message original sender)
-msgInServiceFgSelected:             #ffffff; // inbox selected message information text (like information about a forwarded message original sender)
-msgOutServiceFg:                    #79d57c; // outbox message information text (like information about a forwarded message original sender)
-msgOutServiceFgSelected:            #ffffff; // outbox message information text (like information about a forwarded message original sender)
-msgInShadow:                        #748ea200; // inbox message shadow (below the bubble)
-msgInShadowSelected:                #538ebb00; // inbox selected message shadow (below the bubble)
-msgOutShadow:                       #00000000; // outbox message shadow (below the bubble)
-msgOutShadowSelected:               #43864300; // outbox selected message shadow (below the bubble)
-msgInDateFg:                        #828d94; // inbox message time text
-msgInDateFgSelected:                #ffffff; // inbox selected message time text
-msgOutDateFg:                       #737f87; // outbox message time text
-msgOutDateFgSelected:               #ffffff; // outbox selected message time text
-msgServiceFg:                       windowFgActive; // service message text (like date dividers or service message about the group title being changed)
-msgServiceBg:                       #363c43c8; // service message background (like in a service message about group title being changed) (adjusted)
-msgServiceBgSelected:               #1f792b; // service message selected text background (like in a service message about group title being changed) (adjusted)
-msgInReplyBarColor:                 #4db055; // inbox message reply outline
-msgInReplyBarSelColor:              #ffffff; // inbox selected message reply outline
-msgOutReplyBarColor:                #4db055; // outbox message reply outline
-msgOutReplyBarSelColor:             #ffffff; // outbox selected message reply outline
-msgImgReplyBarColor:                msgServiceFg; // sticker message reply outline
-msgInMonoFg:                        #598a5d; // inbox message monospace text (like a message sent with `test` text)
-msgOutMonoFg:                       #c8eacc; // outbox message monospace text
-msgInMonoFgSelected:                #beffc5; // inbox message monospace text in a selected text or message
-msgOutMonoFgSelected:               #d7ffdb; // outbox message monospace text in a selected text or message
+msgOutBgSelected:                   themeDark; // outbox selected message background (and background of selected text in those messages)
+
+msgSelectOverlay:                   themeImageOverlay; // overlay which is filling the media parts of selected messages (like in selected photo message)
+msgStickerOverlay:                  themeImageOverlay; // overlay which is filling the selected sticker message
+
 msgDateImgFg:                       msgServiceFg; // media message time text (like time text in a sent photo)
 msgDateImgBg:                       #00000054; // media message time bubble background (like time bubble in a sent photo) or file with thumbnail download icon circle background
 msgDateImgBgOver:                   #00000074; // media message download icon circle background with mouse over (like file with thumbnail download icon)
