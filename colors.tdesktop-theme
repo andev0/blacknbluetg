@@ -435,60 +435,59 @@ msgOutMonoFg:                       themeSecondaryFg; // outbox message monospac
 msgInMonoFgSelected:                themeActiveFg; // inbox message monospace text in a selected text or message
 msgOutMonoFgSelected:               themeActiveFg; // outbox message monospace text in a selected text or message
 
-msgDateImgFg:                       msgServiceFg; // media message time text (like time text in a sent photo)
-msgDateImgBg:                       #00000054; // media message time bubble background (like time bubble in a sent photo) or file with thumbnail download icon circle background
-msgDateImgBgOver:                   #00000074; // media message download icon circle background with mouse over (like file with thumbnail download icon)
-msgDateImgBgSelected:               #285a2d87; // selected media message time bubble background
-msgFileThumbLinkInFg:               lightButtonFg; // inbox media file message with thumbnail download / open with button text
-msgFileThumbLinkInFgSelected:       lightButtonFgOver; // inbox selected media file message with thumbnail download / open with button text
-msgFileThumbLinkOutFg:              #79d57c; // outbox media file message with thumbnail download / open with button text
-msgFileThumbLinkOutFgSelected:      #ffffff; // outbox selected media file message with thumbnail download / open with button text
-msgFileInBg:                        #64ba6c; // inbox audio file download circle background
-msgFileInBgOver:                    #5cb265; // inbox audio file download circle background with mouse over
-msgFileInBgSelected:                #ffffff; // inbox selected audio file download circle background
-msgFileOutBg:                       #319a3d; // outbox audio file download circle background
-msgFileOutBgOver:                   #ffffff; // outbox audio file download circle background with mouse over
-msgFileOutBgSelected:               #ffffff; // outbox selected audio file download circle background
-msgFile1Bg:                         #4d9754; // blue shared links / files without image square thumbnail
-msgFile1BgDark:                     #37803f; // blue shared files without image download circle background
-msgFile1BgOver:                     #5ba062; // blue shared files without image download circle background with mouse over
-msgFile1BgSelected:                 #ffffff; // blue shared files without image download circle background if file is selected
-msgFile2Bg:                         #a5efad; // green shared links / shared files without image square thumbnail
-msgFile2BgDark:                     #9af2a3; // green shared files without image download circle background
-msgFile2BgOver:                     #a5f2ad; // green shared files without image download circle background with mouse over
-msgFile2BgSelected:                 #ffffff; // green shared files without image download circle background if file is selected
-msgFile3Bg:                         #e47272; // red shared links / shared files without image square thumbnail
-msgFile3BgDark:                     #cd5b5e; // red shared files without image download circle background
-msgFile3BgOver:                     #c35154; // red shared files without image download circle background with mouse over
-msgFile3BgSelected:                 #9f6a82; // red shared files without image download circle background if file is selected
-msgFile4Bg:                         #efc274; // yellow shared links / shared files without image square thumbnail
-msgFile4BgDark:                     #e6a561; // yellow shared files without image download circle background
-msgFile4BgOver:                     #dc9c5a; // yellow shared files without image download circle background with mouse over
-msgFile4BgSelected:                 #b19d84; // yellow shared files without image download circle background if file is selected
-historyFileInIconFg:                #33393f; // inbox file without thumbnail (like audio file) download arrow icon
-historyFileInIconFgSelected:        #1f792b; // inbox selected file without thumbnail (like audio file) download arrow icon
-historyFileInRadialFg:              #33393f; // inbox file without thumbnail (like audio file) radial download animation line
-historyFileInRadialFgSelected:      historyFileInIconFgSelected; // inbox selected file without thumbnail (like audio file) radial download animation line
-historyFileOutIconFg:               #33393f; // outbox file without thumbnail (like audio file) download arrow icon
-historyFileOutIconFgSelected:       #1f792b; // outbox selected file without thumbnail (like audio file) download arrow icon
-historyFileOutRadialFg:             historyFileOutIconFg; // outbox file without thumbnail (like audio file) radial download animation line
-historyFileOutRadialFgSelected:     #1f792b; // outbox selected file without thumbnail (like audio file) radial download animation line
-historyFileThumbIconFg:             #efefef; // file with thumbnail (or photo / video) download arrow icon
-historyFileThumbIconFgSelected:     #ffffff; // selected file with thumbnail (or photo / video) download arrow icon
-historyFileThumbRadialFg:           historyFileThumbIconFg; // file with thumbnail (or photo / video) radial download animation line
-historyFileThumbRadialFgSelected:   #ffffff; // selected file with thumbnail (or photo / video) radial download animation line
-historyVideoMessageProgressFg:      historyFileThumbIconFg; // radial playback progress in round video messages
-msgWaveformInActive:                windowBgActive; // inbox voice message active waveform lines (like played part of currently playing voice message)
-msgWaveformInActiveSelected:        #ffffff; // inbox selected voice message active waveform lines (like played part of currently playing voice message)
-msgWaveformInInactive:              #5d6b76; // inbox voice message inactive waveform lines (like upcoming part of currently playing voice message)
-msgWaveformInInactiveSelected:      #59b562; // inbox selected voice message inactive waveform lines (like upcoming part of currently playing voice message)
-msgWaveformOutActive:               #319a3d; // outbox voice message active waveform lines (like played part of currently playing voice message)
-msgWaveformOutActiveSelected:       #ffffff; // outbox selected voice message active waveform lines (like played part of currently playing voice message)
-msgWaveformOutInactive:             #596874; // outbox voice message inactive waveform lines (like upcoming part of currently playing voice message)
-msgWaveformOutInactiveSelected:     #59b562; // outbox selected voice message inactive waveform lines (like upcoming part of currently playing voice message)
-msgBotKbOverBgAdd:                  #ffffff14; // this is painted over a bot inline keyboard button (which has msgServiceBg background) when mouse is over that button
-msgBotKbIconFg:                     msgServiceFg; // bot inline keyboard button icon in the top-right corner (like in @vote bot when a poll is ready to be shared)
-msgBotKbRippleBg:                   #9e9d9d10; // bot inline keyboard button ripple effect
+msgFileThumbLinkInFg:               themeContrastFg; // inbox media file message with thumbnail download / open with button text
+msgFileThumbLinkInFgSelected:       themeActiveFg; // inbox selected media file message with thumbnail download / open with button text
+msgFileThumbLinkOutFg:              themeActiveFg; // inboxoutbox media file message with thumbnail download / open with button text
+msgFileThumbLinkOutFgSelected:      themeActiveFg; // outbox selected media file message with thumbnail download / open with button text
+
+msgFileInBg:                        themeButtonBg; // inbox audio file download circle background
+msgFileInBgOver:                    themeButtonBgOver; // inbox audio file download circle background with mouse over
+msgFileInBgSelected:                themeActiveFg; // inbox selected audio file download circle background
+msgFileOutBg:                       msgFileInBg; // outbox audio file download circle background
+msgFileOutBgOver:                   msgFileInBgOver; // outbox audio file download circle background with mouse over
+msgFileOutBgSelected:               msgFileInBgSelected; // outbox selected audio file download circle background
+
+msgFile1Bg:                         themeBlue; // blue shared links / files without image square thumbnail
+msgFile1BgDark:                     themeFadeBg; // blue shared files without image download circle background
+msgFile1BgOver:                     themeFadeFg; // blue shared files without image download circle background with mouse over
+msgFile1BgSelected:                 themeFadeBg; // blue shared files without image download circle background if file is selected
+msgFile2Bg:                         themeGreen; // green shared links / shared files without image square thumbnail
+msgFile2BgDark:                     themeFadeBg; // green shared files without image download circle background
+msgFile2BgOver:                     themeFadeFg; // green shared files without image download circle background with mouse over
+msgFile2BgSelected:                 themeFadeBg; // green shared files without image download circle background if file is selected
+msgFile3Bg:                         themeRed; // red shared links / shared files without image square thumbnail
+msgFile3BgDark:                     themeFadeBg; // red shared files without image download circle background
+msgFile3BgOver:                     themeFadeFg; // red shared files without image download circle background with mouse over
+msgFile3BgSelected:                 themeFadeBg; // red shared files without image download circle background if file is selected
+msgFile4Bg:                         themeYellow; // yellow shared links / shared files without image square thumbnail
+msgFile4BgDark:                     themeFadeBg; // yellow shared files without image download circle background
+msgFile4BgOver:                     themeFadeFg; // yellow shared files without image download circle background with mouse over
+msgFile4BgSelected:                 themeFadeBg; // yellow shared files without image download circle background if file is selected
+
+historyFileInIconFg:                themeSimpleFg; // inbox file without thumbnail (like audio file) download arrow icon
+historyFileInIconFgSelected:        themeButtonBg; // inbox selected file without thumbnail (like audio file) download arrow icon
+historyFileInRadialFg:              themeSimpleFg; // inbox file without thumbnail (like audio file) radial download animation line
+historyFileInRadialFgSelected:      themeButtonBg; // inbox selected file without thumbnail (like audio file) radial download animation line
+historyFileOutIconFg:               historyFileInIconFg; // outbox file without thumbnail (like audio file) download arrow icon
+historyFileOutIconFgSelected:       historyFileInIconFgSelected; // outbox selected file without thumbnail (like audio file) download arrow icon
+historyFileOutRadialFg:             historyFileInRadialFg; // outbox file without thumbnail (like audio file) radial download animation line
+historyFileOutRadialFgSelected:     historyFileInRadialFgSelected; // outbox selected file without thumbnail (like audio file) radial download animation line
+
+historyFileThumbIconFg:             themeActiveFg; // file with thumbnail (or photo / video) download arrow icon
+historyFileThumbIconFgSelected:     themeContrastFg; // selected file with thumbnail (or photo / video) download arrow icon
+historyFileThumbRadialFg:           themeActiveFg; // file with thumbnail (or photo / video) radial download animation line
+historyFileThumbRadialFgSelected:   themeContrastFg; // selected file with thumbnail (or photo / video) radial download animation line
+
+historyVideoMessageProgressFg:      themeActiveFg; // radial playback progress in round video messages
+
+msgWaveformInActive:                themeButtonBg; // inbox voice message active waveform lines (like played part of currently playing voice message)
+msgWaveformInActiveSelected:        themeActiveFg; // inbox selected voice message active waveform lines (like played part of currently playing voice message)
+msgWaveformInInactive:              themeDark; // inbox voice message inactive waveform lines (like upcoming part of currently playing voice message)
+msgWaveformInInactiveSelected:      themeSecondaryFg; // inbox selected voice message inactive waveform lines (like upcoming part of currently playing voice message)
+msgWaveformOutActive:               msgWaveformInActive; // outbox voice message active waveform lines (like played part of currently playing voice message)
+msgWaveformOutActiveSelected:       msgWaveformInActiveSelected; // outbox selected voice message active waveform lines (like played part of currently playing voice message)
+msgWaveformOutInactive:             msgWaveformInInactive; //  // outbox voice message inactive waveform lines (like upcoming part of currently playing voice message)
+msgWaveformOutInactiveSelected:     msgWaveformInInactiveSelected; // outbox selected voice message inactive waveform lines (like upcoming part of currently playing voice message)
 
 // UNSORTED
 
