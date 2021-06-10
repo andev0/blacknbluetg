@@ -414,6 +414,10 @@ msgInDateFgSelected:                themeActiveFg; // inbox selected message tim
 msgOutDateFg:                       msgInDateFg; // outbox message time text
 msgOutDateFgSelected:               msgInDateFgSelected; // outbox selected message time text
 
+msgServiceFg:                       themeSecondaryFg; // service message text (like date dividers or service message about the group title being changed)
+msgServiceBg:                       themeMessageBg; // service message background (like in a service message about group title being changed) (adjusted)
+msgServiceBgSelected:               themeDark; // service message selected text background (like in a service message about group title being changed) (adjusted)
+
 msgDateImgFg:                       msgServiceFg; // media message time text (like time text in a sent photo)
 msgDateImgBg:                       #00000054; // media message time bubble background (like time bubble in a sent photo) or file with thumbnail download icon circle background
 msgDateImgBgOver:                   #00000074; // media message download icon circle background with mouse over (like file with thumbnail download icon)
