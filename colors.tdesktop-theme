@@ -425,6 +425,11 @@ msgServiceFg:                       themeSecondaryFg; // service message text (l
 msgServiceBg:                       themeMessageBg; // service message background (like in a service message about group title being changed) (adjusted)
 msgServiceBgSelected:               themeDark; // service message selected text background (like in a service message about group title being changed) (adjusted)
 
+msgInMonoFg:                        themeSecondaryFg; // inbox message monospace text (like a message sent with `test` text)
+msgOutMonoFg:                       themeSecondaryFg; // outbox message monospace text
+msgInMonoFgSelected:                themeActiveFg; // inbox message monospace text in a selected text or message
+msgOutMonoFgSelected:               themeActiveFg; // outbox message monospace text in a selected text or message
+
 msgDateImgFg:                       msgServiceFg; // media message time text (like time text in a sent photo)
 msgDateImgBg:                       #00000054; // media message time bubble background (like time bubble in a sent photo) or file with thumbnail download icon circle background
 msgDateImgBgOver:                   #00000074; // media message download icon circle background with mouse over (like file with thumbnail download icon)
