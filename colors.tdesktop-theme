@@ -29,6 +29,15 @@ themeFadeBg:                        #00000084; // default radial loader backgrou
 themeTransparent:                   #00000000; // absolutely transparent color.
 themeMessageBg:                     #000000bd; // transparent black for message background.
 
+themeRed:                           #ff5858; // red group member name and userpic background
+themeGreen:                         #87c281; // green group member name and userpic background
+themeYellow:                        #e4c054; // yellow group member name and userpic background
+themeBlue:                          #52b3f8; // blue group member name and userpic background
+themePurple:                        #ab78f4; // purple group member name and userpic background
+themePink:                          #eb5991; // pink group member name and userpic background
+themeSea:                           #39c4c4; // sea group member name and userpic background
+themeOrange:                        #fc7b44; // orange group member name and userpic background
+
 // GLOBAL
 
 windowBg:                           themeBg; // white: fallback for background
@@ -347,31 +356,33 @@ historyUnreadBarFg:                 themeActiveFg; // new unread messages bar te
 historyForwardChooseBg:             themeBg; // forwarding messages in a large window size "choose recipient" background
 historyForwardChooseFg:             themeSimpleFg; // forwarding messages in a large window size "choose recipient" text
 
-historyPeer1NameFg:                 #ec7577; // red group member name
-historyPeer1NameFgSelected:         #ffffff; // red group member name in a selected message
-historyPeer1UserpicBg:              #e17076; // red userpic background
-historyPeer2NameFg:                 #86d67f; // green group member name
-historyPeer2NameFgSelected:         #ffffff; // green group member name in a selected message
-historyPeer2UserpicBg:              #7bc862; // green userpic background
-historyPeer3NameFg:                 #e4c054; // yellow group member name
-historyPeer3NameFgSelected:         #ffffff; // yellow group member name in a selected message
-historyPeer3UserpicBg:              #ccad4f; // yellow userpic background
-historyPeer4NameFg:                 #68c7f3; // blue group member name
-historyPeer4NameFgSelected:         #ffffff; // blue group member name in a selected message
-historyPeer4UserpicBg:              #65aadd; // blue userpic background
-historyPeer5NameFg:                 #b383f3; // purple group member name
-historyPeer5NameFgSelected:         #ffffff; // purple group member name in a selected message
-historyPeer5UserpicBg:              #a695e7; // purple userpic background
-historyPeer6NameFg:                 #e16794; // pink group member name
-historyPeer6NameFgSelected:         #ffffff; // pink group member name in a selected message
-historyPeer6UserpicBg:              #ee7aae; // pink userpic background
-historyPeer7NameFg:                 #57c9e0; // sea group member name
-historyPeer7NameFgSelected:         #ffffff; // sea group member name in a selected message
-historyPeer7UserpicBg:              #71ab7f; // sea userpic background
-historyPeer8NameFg:                 #efb05d; // orange group member name
-historyPeer8NameFgSelected:         #ffffff; // orange group member name in a selected message
-historyPeer8UserpicBg:              #eda86c; // orange userpic background
-historyPeerUserpicFg:               windowFgActive; // default userpic initials
+historyPeer1NameFg:                 themeRed; // red group member name
+historyPeer1NameFgSelected:         themeSimpleFg; // red group member name in a selected message
+historyPeer1UserpicBg:              themeRed; // red userpic background
+historyPeer2NameFg:                 themeGreen; // green group member name
+historyPeer2NameFgSelected:         themeSimpleFg; // green group member name in a selected message
+historyPeer2UserpicBg:              themeGreen; // green userpic background
+historyPeer3NameFg:                 themeYellow; // yellow group member name
+historyPeer3NameFgSelected:         themeSimpleFg; // yellow group member name in a selected message
+historyPeer3UserpicBg:              themeYellow; // yellow userpic background
+historyPeer4NameFg:                 themeBlue; // blue group member name
+historyPeer4NameFgSelected:         themeSimpleFg; // blue group member name in a selected message
+historyPeer4UserpicBg:              themeBlue; // blue userpic background
+historyPeer5NameFg:                 themePurple; // purple group member name
+historyPeer5NameFgSelected:         themeSimpleFg; // purple group member name in a selected message
+historyPeer5UserpicBg:              themePurple; // purple userpic background
+historyPeer6NameFg:                 themePink; // pink group member name
+historyPeer6NameFgSelected:         themeSimpleFg; // pink group member name in a selected message
+historyPeer6UserpicBg:              themePink; // pink userpic background
+historyPeer7NameFg:                 themeSea; // sea group member name
+historyPeer7NameFgSelected:         themeSimpleFg; // sea group member name in a selected message
+historyPeer7UserpicBg:              themeSea; // sea userpic background
+historyPeer8NameFg:                 themeOrange; // orange group member name
+historyPeer8NameFgSelected:         themeSimpleFg; // orange group member name in a selected message
+historyPeer8UserpicBg:              themeOrange; // orange userpic background
+
+historyPeerUserpicFg:               themeActiveFg; // default userpic initials
+
 historyScrollBarBg:                 #8989897a; // scroll bar current rectangle, the bar itself in the chat view (adjusted)
 historyScrollBarBgOver:             #6b6b6bbc; // scroll bar current rectangle with mouse over it in the chat view (adjusted)
 historyScrollBg:                    #5f5f5f4c; // scroll bar background (adjusted)
