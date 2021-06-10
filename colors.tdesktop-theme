@@ -489,6 +489,10 @@ msgWaveformOutActiveSelected:       msgWaveformInActiveSelected; // outbox selec
 msgWaveformOutInactive:             msgWaveformInInactive; //  // outbox voice message inactive waveform lines (like upcoming part of currently playing voice message)
 msgWaveformOutInactiveSelected:     msgWaveformInInactiveSelected; // outbox selected voice message inactive waveform lines (like upcoming part of currently playing voice message)
 
+msgBotKbOverBgAdd:                  themeImageOverlay; // this is painted over a bot inline keyboard button (which has msgServiceBg background) when mouse is over that button
+msgBotKbIconFg:                     themeSecondaryFg; // bot inline keyboard button icon in the top-right corner (like in @vote bot when a poll is ready to be shared)
+msgBotKbRippleBg:                   themeMessageBg; // bot inline keyboard button ripple effect
+
 // UNSORTED
 
 mediaInFg:                          msgInDateFg; // inbox media message status text (like in file that is being downloaded)
