@@ -15,9 +15,6 @@ themeDark:                          #2e333d; // color for dark elements.
 themeButtonFg:                      #f2f2f2; // color for buttons' text.
 themeButtonBg:                      #0e65e6; // background for all buttons.
 themeButtonBgOver:                  #005bdb; // background for all buttons when hovered.
-themeLightButtonFg:                 themeButtonFg; // color for light buttons' text.
-themeLightButtonBg:                 themeButtonBg; // background for all light buttons.
-themeLightButtonBgOver:             themeButtonBgOver; // background for all light buttons when hovered.
 themeSeparator:                     #232323; // separator color for menus.
 themeSuccess:                       #64db64; // color of elements that show success.
 themeError:                         #f53d46; // color of elements that show error.
@@ -27,8 +24,8 @@ themeImageBg:                       #000000; // image background (when photo siz
 themeImageTransparencyBg:           #ffffff; // image background when displaying an image with opacity where no opacity is needed.
 themeShadowColor:                   #000000b8; // all shadows' color.
 themeShadowColorNoAlpha:            #000000; // all shadows' color when alpha channel is not supported.
-themeLoaderFg:                      #ffffff5c; // default radial loader line (like in Media Viewer when loading a photo)
-themeLoaderBg:                      #00000084; // default radial loader background (like in Media Viewer when loading a photo)
+themeFadeFg:                        #ffffff5c; // default radial loader line (like in Media Viewer when loading a photo)
+themeFadeBg:                        #00000084; // default radial loader background (like in Media Viewer when loading a photo)
 themeTransparent:                   #00000000; // absolutely transparent color.
 themeMessageBg:                     #000000bd; // transparent black for message background.
 
@@ -71,13 +68,16 @@ activeButtonBgOver:                 themeButtonBgOver; // default active button 
 activeButtonBgRipple:               themeButtonBg; // default active button ripple effect
 activeButtonFg:                     themeButtonFg; // default active button text
 activeButtonFgOver:                 themeActiveFg; // default active button text with mouse over
+
 activeButtonSecondaryFg:            themeButtonFg; // default active button additional text (selected messages counter in forward / delete buttons)
 activeButtonSecondaryFgOver:        themeActiveFg; // default active button additional text with mouse over
-lightButtonBg:                      themeLightButtonBg; // default light button background (like buttons in boxes)
-lightButtonBgOver:                  themeLightButtonBgOver; // default light button background with mouse over
-lightButtonBgRipple:                themeLightButtonBg; // default light button ripple effect
-lightButtonFg:                      themeLightButtonFg; // default light button text
-lightButtonFgOver:                  themeLightButtonFg; // default light button text with mouse over
+
+lightButtonBg:                      activeButtonBg; // default light button background (like buttons in boxes)
+lightButtonBgOver:                  activeButtonBgOver; // default light button background with mouse over
+lightButtonBgRipple:                activeButtonBgRipple; // default light button ripple effect
+lightButtonFg:                      activeButtonFg; // default light button text
+lightButtonFgOver:                  activeButtonFgOver; // default light button text with mouse over
+
 attentionButtonFg:                  activeButtonFg; // default attention button text (like confirm button on log out)
 attentionButtonFgOver:              themeActiveFg; // default attention button text with mouse over
 attentionButtonBgOver:              themeAttention; // default attention button background with mouse over
@@ -133,25 +133,27 @@ tooltipBorderFg:                    themeDark; // tooltip border
 // CHROMEBAR
 
 titleShadow:                        themeTransparent; // one pixel line shadow at the bottom of custom window title
+
 titleBg:                            themeBg; // custom window title background when window is inactive
-titleBgActive:                      themeBgOver; // custom window title background when window is active
 titleButtonBg:                      titleBg; // custom window title minimize/maximize/restore button background when window is inactive (Windows only)
 titleButtonFg:                      themeSecondaryFg; // custom window title minimize/maximize/restore button icon when window is inactive (Windows only)
-titleButtonBgOver:                  themeBg; // custom window title minimize/maximize/restore button background with mouse over when window is inactive (Windows only)
+titleButtonBgOver:                  titleButtonBg; // custom window title minimize/maximize/restore button background with mouse over when window is inactive (Windows only)
 titleButtonFgOver:                  themeActiveFg; // custom window title minimize/maximize/restore button icon with mouse over when window is inactive (Windows only)
-titleButtonBgActive:                titleBgActive; // custom window title minimize/maximize/restore button background when window is active (Windows only)
-titleButtonFgActive:                titleButtonFg; // custom window title minimize/maximize/restore button icon when window is active (Windows only)
-titleButtonBgActiveOver:            titleButtonBgOver; // custom window title minimize/maximize/restore button background with mouse over when window is active (Windows only)
-titleButtonFgActiveOver:            titleButtonFgOver; // custom window title minimize/maximize/restore button icon with mouse over when window is active (Windows only)
 titleButtonCloseBg:                 titleButtonBg; // custom window title close button background when window is inactive (Windows only)
 titleButtonCloseFg:                 titleButtonFg; // custom window title close button icon when window is inactive (Windows only)
 titleButtonCloseBgOver:             themeAttention; // custom window title close button background with mouse over when window is inactive (Windows only)
 titleButtonCloseFgOver:             windowFgActive; // custom window title close button icon with mouse over when window is inactive (Windows only)
+titleFg:                            themeSecondaryFg; // custom window title text when window is inactive (macOS only)
+
+titleBgActive:                      themeBgOver; // custom window title background when window is active
+titleButtonBgActive:                titleBgActive; // custom window title minimize/maximize/restore button background when window is active (Windows only)
+titleButtonFgActive:                titleButtonFg; // custom window title minimize/maximize/restore button icon when window is active (Windows only)
+titleButtonBgActiveOver:            titleButtonBgActive; // custom window title minimize/maximize/restore button background with mouse over when window is active (Windows only)
+titleButtonFgActiveOver:            titleButtonFgOver; // custom window title minimize/maximize/restore button icon with mouse over when window is active (Windows only)
 titleButtonCloseBgActive:           titleButtonBgActive; // custom window title close button background when window is active (Windows only)
 titleButtonCloseFgActive:           titleButtonCloseFg; // custom window title close button icon when window is active (Windows only)
 titleButtonCloseBgActiveOver:       titleButtonCloseBgOver; // custom window title close button background with mouse over when window is active (Windows only)
 titleButtonCloseFgActiveOver:       titleButtonCloseFgOver; // custom window title close button icon with mouse over when window is active (Windows only)
-titleFg:                            themeSecondaryFg; // custom window title text when window is inactive (macOS only)
 titleFgActive:                      themeActiveFg; // custom window title text when window is active (macOS only)
 
 // TRAY COUNTER
@@ -221,12 +223,12 @@ dialogsForwardFg:                   themeSecondaryFg; // forwarding panel text (
 
 // TODO: PUT IT TO THE MEDIA PLAYER COLORS
 
-radialFg:                           themeLoaderFg; // default radial loader line (like in Media Viewer when loading a photo)
-radialBg:                           themeLoaderBg; // default radial loader background (like in Media Viewer when loading a photo)
+radialFg:                           themeFadeFg; // default radial loader line (like in Media Viewer when loading a photo)
+radialBg:                           themeFadeBg; // default radial loader background (like in Media Viewer when loading a photo)
 
 // BOX MENU
 
-layerBg:                            themeLoaderBg; // box and main menu background layer fade
+layerBg:                            themeFadeBg; // box and main menu background layer fade
 cancelIconFg:                       themeContrastFg; // default for settings close icon and box search cancel icon
 cancelIconFgOver:                   themeActiveFg; // default for settings close icon and box search cancel icon with mouse over
 boxBg:                              windowBg; // box background
@@ -251,8 +253,8 @@ contactsStatusFgOnline:             themeContrastFg; // contacts (and some other
 
 // PHOTO CROP
 
-photoCropFadeBg:                    themeLoaderBg; // avatar crop box fade background (when choosing a new photo in Settings or for a group)
-photoCropPointFg:                   themeLoaderFg; // avatar crop box corner rectangles (when choosing a new photo in Settings or for a group)
+photoCropFadeBg:                    themeFadeBg; // avatar crop box fade background (when choosing a new photo in Settings or for a group)
+photoCropPointFg:                   themeFadeFg; // avatar crop box corner rectangles (when choosing a new photo in Settings or for a group)
 
 // CALLS LIST
 
@@ -283,12 +285,6 @@ introCoverPlaneTop:                 themeSimpleFg; // intro plane part
 searchedBarBg:                      themeBgOver; // search results bar background (in chats list, contacts box..)
 searchedBarFg:                      themeContrastFg; // search results bar text (in chats list, contacts box..)
 
-// CHAT
-
-topBarBg:                           themeBg; // top bar background (in chat view, media overview..)
-imageBg:                            themeImageBg; // image background fallback (when photo size is less than minimum allowed)
-imageBgTransparent:                 themeImageTransparencyBg; // image background when displaying an image with opacity where no opacity is needed
-
 // STICKERS PANEL
 
 emojiPanBg:                         windowBg; // emoji panel background
@@ -301,9 +297,14 @@ emojiPanHeaderBg:                   emojiPanBg; // emoji panel section header ba
 
 stickerPanDeleteBg:                 themeBgOver; // delete X button background for custom sent stickers in stickers panel (legacy)
 stickerPanDeleteFg:                 windowFgActive; // delete X button icon for custom sent stickers in stickers panel (legacy)
-stickerPreviewBg:                   themeLoaderBg; // sticker and GIF preview background (when you press and hold on a sticker)
+stickerPreviewBg:                   themeFadeBg; // sticker and GIF preview background (when you press and hold on a sticker)
 
-// CHAT
+// CHAT VIEW
+
+topBarBg:                           themeBg; // top bar background (in chat view, media overview..)
+
+imageBg:                            themeImageBg; // image background fallback (when photo size is less than minimum allowed)
+imageBgTransparent:                 themeImageTransparencyBg; // image background when displaying an image with opacity where no opacity is needed
 
 historyTextInFg:                    themeSimpleFg; // inbox message text
 historyTextInFgSelected:            themeActiveFg; // inbox message selected text or text in a selected message
@@ -336,7 +337,7 @@ historyCallArrowOutFg:              themeSimpleFg; // outgoing phone call arrow
 historyCallArrowOutFgSelected:      historyTextInFgSelected; // outgoing phone call arrow
 
 historyUnreadBarBg:                 themeMessageBg; // new unread messages bar background
-historyUnreadBarBorder:             themeActiveFg; // new unread messages bar shadow
+historyUnreadBarBorder:             themeContrastFg; // new unread messages bar shadow
 historyUnreadBarFg:                 themeActiveFg; // new unread messages bar text
 
 // GUESS WHAT. TELEGRAM FORGOT TO ADD THIS COLOR TO THE APP AGAIN.
