@@ -383,10 +383,11 @@ historyPeer8UserpicBg:              themeOrange; // orange userpic background
 
 historyPeerUserpicFg:               themeActiveFg; // default userpic initials
 
-historyScrollBarBg:                 #8989897a; // scroll bar current rectangle, the bar itself in the chat view (adjusted)
-historyScrollBarBgOver:             #6b6b6bbc; // scroll bar current rectangle with mouse over it in the chat view (adjusted)
-historyScrollBg:                    #5f5f5f4c; // scroll bar background (adjusted)
-historyScrollBgOver:                #6262626b; // scroll bar background with mouse over the scroll bar (adjusted)
+historyScrollBarBg:                 scrollBarBg; // scroll bar current rectangle, the bar itself in the chat view (adjusted)
+historyScrollBarBgOver:             scrollBarBgOver; // scroll bar current rectangle with mouse over it in the chat view (adjusted)
+historyScrollBg:                    scrollBg; // scroll bar background (adjusted)
+historyScrollBgOver:                scrollBgOver; // scroll bar background with mouse over the scroll bar (adjusted)
+
 msgInBg:                            themeMessageBg; // inbox message background
 msgInBgSelected:                    #1f792b; // inbox selected message background (and background of selected text in those messages)
 msgOutBg:                           themeMessageBg; // outbox message background
