@@ -320,9 +320,9 @@ historyTextInFgSelected:            themeActiveFg; // inbox message selected tex
 historyTextOutFg:                   themeContrastFg; // outbox message text
 historyTextOutFgSelected:           historyTextInFgSelected; // outbox message selected text or text in a selected message
 
-historyLinkInFg:                    historyTextOutFg; // inbox message link
+historyLinkInFg:                    themeContrastFg; // inbox message link
 historyLinkInFgSelected:            historyTextInFgSelected; // inbox message link in a selected text or message
-historyLinkOutFg:                   historyTextInFg; // outbox message link
+historyLinkOutFg:                   themeActiveFg; // outbox message link
 historyLinkOutFgSelected:           historyTextInFgSelected; // outbox message link in a selected text or message
 
 historyFileNameInFg:                historyTextOutFg; // inbox media filename text
