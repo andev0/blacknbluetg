@@ -402,6 +402,13 @@ msgInServiceFgSelected:             themeActiveFg; // inbox selected message inf
 msgOutServiceFg:                    themeSimpleFg; // outbox message information text (like information about a forwarded message original sender)
 msgOutServiceFgSelected:            themeActiveFg; // outbox message information text (like information about a forwarded message original sender)
 
+msgInReplyBarColor:                 msgInServiceFg; // inbox message reply outline
+msgInReplyBarSelColor:              msgInServiceFgSelected; // inbox selected message reply outline
+msgOutReplyBarColor:                msgOutServiceFg; // outbox message reply outline
+msgOutReplyBarSelColor:             msgOutServiceFgSelected; // outbox selected message reply outline
+
+msgImgReplyBarColor:                msgInServiceFg; // sticker message reply outline
+
 // IF YOU WILL MAKE THIS COLORS NOT TRANSPARENT, SO BUGGED SQUARES WILL BE VISIBLE IN MESSGAES CORNERS
 
 msgInShadow:                        themeTransparent; // inbox message shadow (below the bubble)
