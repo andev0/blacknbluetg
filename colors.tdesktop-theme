@@ -397,6 +397,11 @@ msgOutBgSelected:                   themeDark; // outbox selected message backgr
 msgSelectOverlay:                   themeImageOverlay; // overlay which is filling the media parts of selected messages (like in selected photo message)
 msgStickerOverlay:                  themeImageOverlay; // overlay which is filling the selected sticker message
 
+msgInServiceFg:                     themeContrastFg; // inbox message information text (like information about a forwarded message original sender)
+msgInServiceFgSelected:             themeActiveFg; // inbox selected message information text (like information about a forwarded message original sender)
+msgOutServiceFg:                    themeSimpleFg; // outbox message information text (like information about a forwarded message original sender)
+msgOutServiceFgSelected:            themeActiveFg; // outbox message information text (like information about a forwarded message original sender)
+
 msgDateImgFg:                       msgServiceFg; // media message time text (like time text in a sent photo)
 msgDateImgBg:                       #00000054; // media message time bubble background (like time bubble in a sent photo) or file with thumbnail download icon circle background
 msgDateImgBgOver:                   #00000074; // media message download icon circle background with mouse over (like file with thumbnail download icon)
