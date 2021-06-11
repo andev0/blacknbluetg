@@ -39,6 +39,11 @@ themePink:                          #eb5991; // pink group member name and userp
 themeSea:                           #39c4c4; // sea group member name and userpic background
 themeOrange:                        #fc7b44; // orange group member name and userpic background
 
+themeDarkRed:                       #ea4848; // dark red corner of files without preview
+themeDarkYellow:                    #daad4a; // dark yellow corner of files without preview
+themeDarkGreen:                     #6dad66; // dark blue corner of files without preview
+themeDarkBlue:                      #3098de; // dark green corner of files without preview
+
 // GLOBAL
 
 windowBg:                           themeBg; // white: fallback for background
@@ -230,11 +235,6 @@ dialogsRippleBgActive:              themeBg; //
 
 dialogsForwardBg:                   themeBg; // forwarding panel background (when forwarding messages in the smallest window size)
 dialogsForwardFg:                   themeSecondaryFg; // forwarding panel text (when forwarding messages in the smallest window size)
-
-// TODO: PUT IT TO THE MEDIA PLAYER COLORS
-
-radialFg:                           themeFadeFg; // default radial loader line (like in Media Viewer when loading a photo)
-radialBg:                           themeFadeBg; // default radial loader background (like in Media Viewer when loading a photo)
 
 // BOX MENU
 
@@ -489,10 +489,8 @@ videoPlayIconFg:                    themeActiveFg; // other video play icon arro
 toastBg:                            themeMessageBg; // toast notification background (like when you click on your t.me link when editing your username)
 toastFg:                            themeActiveFg; // toast notification text (like when you click on your t.me link when editing your username)
 
-// TODO
-
-reportSpamBg:                       #363c42; // report spam panel background (like a non contact user writes your for the first time)
-reportSpamFg:                       windowFg; // report spam panel text (when you send a report from that panel)
+reportSpamBg:                       themeBg; // report spam panel background (like a non contact user writes your for the first time)
+reportSpamFg:                       themeAttention; // report spam panel text (when you send a report from that panel)
 
 historyToDownBg:                    themeBg; // arrow button background (to scroll to the end of the viewed chat)
 historyToDownBgOver:                themeBgOver; // arrow button background with mouse over
@@ -585,38 +583,52 @@ mediaPlayerActiveFg:                themeContrastFg; // audio file player playba
 mediaPlayerInactiveFg:              themeDark; // audio file player playback progress upcoming (not played yet) part with mouse over
 mediaPlayerDisabledFg:              themeSecondaryFg; // audio file player loading progress (when you're playing an audio file and switch to the previous one which is not loaded yet)
 
-// UNSORTED
+// MEDIA VIEW
 
-mediaviewFileBg:                    windowBg; // file rectangle background (when you view a png file in Media Viewer and go to a previous, not loaded yet, file)
-mediaviewFileNameFg:                windowFg; // file name in file rectangle
-mediaviewFileSizeFg:                windowSubTextFg; // file size text in file rectangle
-mediaviewFileRedCornerFg:           #d55959; // red file thumbnail placeholder corner in file rectangle (for a file without thumbnail, like .pdf)
-mediaviewFileYellowCornerFg:        #e8a659; // yellow file thumbnail placeholder corner in file rectangle (for a file without thumbnail, like .zip)
-mediaviewFileGreenCornerFg:         #49a957; // green file thumbnail placeholder corner in file rectangle (for a file without thumbnail, like .exe)
-mediaviewFileBlueCornerFg:          #599dcf; // blue file thumbnail placeholder corner in file rectangle (for a file without thumbnail, like .dmg)
-mediaviewFileExtFg:                 activeButtonFg; // file extension text in file thumbnail placeholder in file rectangle
-mediaviewMenuBg:                    #383838; // context menu in Media Viewer background
-mediaviewMenuBgOver:                #505050; // context menu item background with mouse over
-mediaviewMenuBgRipple:              #676767; // context menu item ripple effect
-mediaviewMenuFg:                    windowFgActive; // context menu item text
-mediaviewBg:                        #222222eb; // Media Viewer background
-mediaviewVideoBg:                   imageBg; // Media Viewer background when viewing a video in full screen
-mediaviewControlBg:                 #0000003c; // controls background (like next photo / previous photo)
-mediaviewControlFg:                 windowFgActive; // controls icon (like next photo / previous photo)
-mediaviewCaptionBg:                 #11111180; // caption text background (when viewing photo with caption)
-mediaviewCaptionFg:                 mediaviewControlFg; // caption text
-mediaviewTextLinkFg:                #89f293; // caption text link
+radialFg:                           themeFadeFg; // default radial loader line (like in Media Viewer when loading a photo)
+radialBg:                           themeFadeBg; // default radial loader background (like in Media Viewer when loading a photo)
+
+mediaviewFileBg:                    themeBg; // file rectangle background (when you view a png file in Media Viewer and go to a previous, not loaded yet, file)
+mediaviewFileNameFg:                themeSimpleFg; // file name in file rectangle
+mediaviewFileSizeFg:                themeSecondaryFg; // file size text in file rectangle
+
+mediaviewFileRedCornerFg:           themeDarkRed; // red file thumbnail placeholder corner in file rectangle (for a file without thumbnail, like .pdf)
+mediaviewFileYellowCornerFg:        themeDarkYellow; // yellow file thumbnail placeholder corner in file rectangle (for a file without thumbnail, like .zip)
+mediaviewFileGreenCornerFg:         themeDarkGreen; // green file thumbnail placeholder corner in file rectangle (for a file without thumbnail, like .exe)
+mediaviewFileBlueCornerFg:          themeDarkBlue; // blue file thumbnail placeholder corner in file rectangle (for a file without thumbnail, like .dmg)
+
+mediaviewFileExtFg:                 themeActiveFg; // file extension text in file thumbnail placeholder in file rectangle
+
+mediaviewMenuBg:                    themeBg; // context menu in Media Viewer background
+mediaviewMenuBgOver:                themeBgOver; // context menu item background with mouse over
+mediaviewMenuBgRipple:              themeBg; // context menu item ripple effect
+mediaviewMenuFg:                    themeSimpleFg; // context menu item text
+
+mediaviewBg:                        themeShadowColor; // Media Viewer background
+mediaviewVideoBg:                   themeShadowColorNoAlpha; // Media Viewer background when viewing a video in full screen
+
+mediaviewControlBg:                 themeFadeBg; // controls background (like next photo / previous photo)
+mediaviewControlFg:                 themeActiveFg; // controls icon (like next photo / previous photo)
+
+mediaviewCaptionBg:                 themeFadeBg; // caption text background (when viewing photo with caption)
+mediaviewCaptionFg:                 themeSimpleFg; // caption text
+mediaviewTextLinkFg:                themeContrastFg; // caption text link
+
 mediaviewSaveMsgBg:                 toastBg; // save to file toast message background in Media Viewer
 mediaviewSaveMsgFg:                 toastFg; // save to file toast message text
-mediaviewPlaybackActive:            #c7c7c7; // video playback progress already played part
-mediaviewPlaybackInactive:          #252525; // video playback progress upcoming (not played yet) part
-mediaviewPlaybackActiveOver:        #ffffff; // video playback progress already played part with mouse over
-mediaviewPlaybackInactiveOver:      #474747; // video playback progress upcoming (not played yet) part with mouse over
-mediaviewPlaybackProgressFg:        #ffffffc7; // video playback progress text
+
+mediaviewPlaybackActive:            themeContrastFg; // video playback progress already played part
+mediaviewPlaybackInactive:          themeDarkFg; // video playback progress upcoming (not played yet) part
+mediaviewPlaybackActiveOver:        themeActiveFg; // video playback progress already played part with mouse over
+mediaviewPlaybackInactiveOver:      themeSecondaryFg; // video playback progress upcoming (not played yet) part with mouse over
+mediaviewPlaybackProgressFg:        themeContrastFg; // video playback progress text
 mediaviewPlaybackIconFg:            mediaviewPlaybackActive; // video playback controls icon
 mediaviewPlaybackIconFgOver:        mediaviewPlaybackActiveOver; // video playback controls icon with mouse over
-mediaviewTransparentBg:             #ffffff; // transparent filling part (when viewing a transparent .png file in Media Viewer)
-mediaviewTransparentFg:             #cccccc; // another transparent filling part
+mediaviewTransparentBg:             themeBg; // transparent filling part (when viewing a transparent .png file in Media Viewer)
+mediaviewTransparentFg:             themeBgOver; // another transparent filling part
+
+// UNSORTED
+
 notificationBg:                     windowBg; // custom notification window background
 callBg:                             #26282cf2; // phone call popup background
 callNameFg:                         #ffffff; // phone call popup name text

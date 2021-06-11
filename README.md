@@ -4,6 +4,6 @@ This theme creates as <b>very easy to customize</b>. That means that you can cha
 ## Alpha version
 Please, note that the theme is an alpha version now, that means that many things are not complete and will be changed before release.
 
-At the moment, 395/456 colors were set up.
+At the moment, 427/456 colors were set up.
 
-![87% progress bar](https://progress-bar.dev/87/?title=395/456+colors&width=256&color=21262d)
+![94% progress bar](https://progress-bar.dev/94/?title=427/456+colors&width=256&color=21262d)
