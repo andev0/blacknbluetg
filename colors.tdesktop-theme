@@ -76,7 +76,7 @@ sideBarIconFgActive:                sideBarTextFgActive; // filters side bar act
 sideBarBadgeBg:                     themeContrastFg; // filters side bar badge background
 sideBarBadgeBgMuted:                sideBarTextFg; // filters side bar unimportant badge background
 
-// GLOBAL BUTTONS
+// BUTTONS
 
 activeButtonBg:                     themeButtonBg; // default active button background
 activeButtonBgOver:                 themeButtonBgOver; // default active button background with mouse over
@@ -138,6 +138,7 @@ filterInputInactiveBg:              themeDark; // default rounded input field ba
 checkboxFg:                         themeDark; // default unchecked checkbox rounded rectangle (and also emoji category icons)
 sliderBgInactive:                   themeDark; // default slider not active bar (like in Settings when you choose interface scale or custom notifications count)
 sliderBgActive:                     windowBgActive; // default slider active bar (like in Settings when you choose interface scale or custom notifications count)
+filterInputActiveBg:                #3d444b; // default rounded input field active background (like in chats list search field when field is focused)
 
 // TOOLTIP
 
@@ -300,6 +301,9 @@ searchedBarFg:                      themeContrastFg; // search results bar text 
 emojiPanBg:                         windowBg; // emoji panel background
 emojiPanCategories:                 emojiPanBg; // emoji panel categories background
 emojiPanHeaderFg:                   themeContrastFg; // emoji panel section header text
+
+emojiIconFg:                        #6c7278; // emoji category icon
+emojiIconFgActive:                  #4faf59; // active emoji category icon
 
 // THIS VARIABLE DOESN'T MAKE ANY CHANGES
 
@@ -476,6 +480,9 @@ msgBotKbOverBgAdd:                  themeImageOverlay; // this is painted over a
 msgBotKbIconFg:                     themeSecondaryFg; // bot inline keyboard button icon in the top-right corner (like in @vote bot when a poll is ready to be shared)
 msgBotKbRippleBg:                   themeMessageBg; // bot inline keyboard button ripple effect
 
+botKbBg:                            #3d444b; // bot keyboard button background
+botKbDownBg:                        #494f55; // bot keyboard button ripple effect
+
 mediaInFg:                          themeSecondaryFg; // inbox media message status text (like in file that is being downloaded)
 mediaInFgSelected:                  themeActiveFg; // inbox selected media message status text (like in file that is being downloaded)
 mediaOutFg:                         mediaInFg; // outbox media message status text (like in file that is being downloaded)
@@ -485,9 +492,6 @@ youtubePlayIconBg:                  themeRed; // youtube play icon background (w
 youtubePlayIconFg:                  themeActiveFg; // youtube play icon arrow (when a link to a youtube video with a webpage preview is sent)
 videoPlayIconBg:                    themeFadeBg; // other video play icon background (like when a link to a vimeo video with a webpage preview is sent)
 videoPlayIconFg:                    themeActiveFg; // other video play icon arrow (like when a link to a vimeo video with a webpage preview is sent)
-
-toastBg:                            themeMessageBg; // toast notification background (like when you click on your t.me link when editing your username)
-toastFg:                            themeActiveFg; // toast notification text (like when you click on your t.me link when editing your username)
 
 reportSpamBg:                       themeBg; // report spam panel background (like a non contact user writes your for the first time)
 reportSpamFg:                       themeAttention; // report spam panel text (when you send a report from that panel)
@@ -539,6 +543,7 @@ msgFile4BgSelected:                 themeFadeBg; // yellow shared files without 
 
 overviewCheckBg:                    themeFadeBg; // shared files / links checkbox background for not selected rows when some rows are selected
 overviewCheckFg:                    themeSimpleFg; // shared files / links checkbox icon for not selected rows when some rows are selected
+overviewCheckBorder:                #e4eaef; // shared media round checkbox border
 overviewCheckFgActive:              themeActiveFg; // shared files / links checkbox icon for selected rows
 overviewPhotoSelectOverlay:         themeImageOverlay; // shared photos / videos / links fill for selected rows
 
@@ -627,9 +632,12 @@ mediaviewPlaybackIconFgOver:        mediaviewPlaybackActiveOver; // video playba
 mediaviewTransparentBg:             themeBg; // transparent filling part (when viewing a transparent .png file in Media Viewer)
 mediaviewTransparentFg:             themeBgOver; // another transparent filling part
 
-// UNSORTED
+// NOTIFICATIONS
 
-notificationBg:                     windowBg; // custom notification window background
+notificationBg:                     themeBg; // custom notification window background
+
+// CALLS
+
 callBg:                             #26282cf2; // phone call popup background
 callNameFg:                         #ffffff; // phone call popup name text
 callFingerprintBg:                  #00000066; // phone call popup emoji fingerprint background
@@ -649,12 +657,12 @@ callBarMuteRipple:                  dialogsRippleBgActive; // active phone call 
 callBarBgMuted:                     #8f8f8f; // phone call bar with muted mic background
 callBarUnmuteRipple:                #7f7f7f; // phone call bar with muted mic mute and hangup button ripple effect
 callBarFg:                          dialogsNameFgActive; // phone call bar text and icons
+
+// TOOLTIP
+
+toastBg:                            themeMessageBg; // toast notification background (like when you click on your t.me link when editing your username)
+toastFg:                            themeActiveFg; // toast notification text (like when you click on your t.me link when editing your username)
+
 importantTooltipBg:                 toastBg; // 
 importantTooltipFg:                 toastFg; // 
-importantTooltipFgLink:             #8bfa96; // 
-filterInputActiveBg:                #3d444b; // default rounded input field active background (like in chats list search field when field is focused)
-botKbBg:                            #3d444b; // bot keyboard button background
-botKbDownBg:                        #494f55; // bot keyboard button ripple effect
-emojiIconFg:                        #6c7278; // emoji category icon
-emojiIconFgActive:                  #4faf59; // active emoji category icon
-overviewCheckBorder:                #e4eaef; // shared media round checkbox border
+importantTooltipFgLink:             themeContrastFg; // 
