@@ -578,12 +578,15 @@ mainMenuCoverFg:                    themeSimpleFg; // main menu top cover text
 mainMenuCloudFg:                    activeButtonFg; // 
 mainMenuCloudBg:                    themeButtonBg; // 
 
+// AUDIO PLAYER
+
+mediaPlayerBg:                      themeBg; // audio file player background
+mediaPlayerActiveFg:                themeContrastFg; // audio file player playback progress already played part
+mediaPlayerInactiveFg:              themeDark; // audio file player playback progress upcoming (not played yet) part with mouse over
+mediaPlayerDisabledFg:              themeSecondaryFg; // audio file player loading progress (when you're playing an audio file and switch to the previous one which is not loaded yet)
+
 // UNSORTED
 
-mediaPlayerBg:                      windowBg; // audio file player background
-mediaPlayerActiveFg:                windowBgActive; // audio file player playback progress already played part
-mediaPlayerInactiveFg:              sliderBgInactive; // audio file player playback progress upcoming (not played yet) part with mouse over
-mediaPlayerDisabledFg:              #9dd1ef; // audio file player loading progress (when you're playing an audio file and switch to the previous one which is not loaded yet)
 mediaviewFileBg:                    windowBg; // file rectangle background (when you view a png file in Media Viewer and go to a previous, not loaded yet, file)
 mediaviewFileNameFg:                windowFg; // file name in file rectangle
 mediaviewFileSizeFg:                windowSubTextFg; // file size text in file rectangle
