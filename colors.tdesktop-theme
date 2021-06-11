@@ -498,12 +498,13 @@ mediaInFgSelected:                  themeActiveFg; // inbox selected media messa
 mediaOutFg:                         mediaInFg; // outbox media message status text (like in file that is being downloaded)
 mediaOutFgSelected:                 mediaInFgSelected; // outbox selected media message status text (like in file that is being downloaded)
 
+youtubePlayIconBg:                  themeRed; // youtube play icon background (when a link to a youtube video with a webpage preview is sent)
+youtubePlayIconFg:                  themeActiveFg; // youtube play icon arrow (when a link to a youtube video with a webpage preview is sent)
+videoPlayIconBg:                    themeFadeBg; // other video play icon background (like when a link to a vimeo video with a webpage preview is sent)
+videoPlayIconFg:                    themeActiveFg; // other video play icon arrow (like when a link to a vimeo video with a webpage preview is sent)
+
 // UNSORTED
 
-youtubePlayIconBg:                  #e83131c8; // youtube play icon background (when a link to a youtube video with a webpage preview is sent)
-youtubePlayIconFg:                  windowFgActive; // youtube play icon arrow (when a link to a youtube video with a webpage preview is sent)
-videoPlayIconBg:                    #0000007f; // other video play icon background (like when a link to a vimeo video with a webpage preview is sent)
-videoPlayIconFg:                    #ffffff; // other video play icon arrow (like when a link to a vimeo video with a webpage preview is sent)
 toastBg:                            #000000b2; // toast notification background (like when you click on your t.me link when editing your username)
 toastFg:                            windowFgActive; // toast notification text (like when you click on your t.me link when editing your username)
 reportSpamBg:                       #363c42; // report spam panel background (like a non contact user writes your for the first time)
