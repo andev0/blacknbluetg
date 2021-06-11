@@ -493,12 +493,13 @@ msgBotKbOverBgAdd:                  themeImageOverlay; // this is painted over a
 msgBotKbIconFg:                     themeSecondaryFg; // bot inline keyboard button icon in the top-right corner (like in @vote bot when a poll is ready to be shared)
 msgBotKbRippleBg:                   themeMessageBg; // bot inline keyboard button ripple effect
 
+mediaInFg:                          themeSecondaryFg; // inbox media message status text (like in file that is being downloaded)
+mediaInFgSelected:                  themeActiveFg; // inbox selected media message status text (like in file that is being downloaded)
+mediaOutFg:                         mediaInFg; // outbox media message status text (like in file that is being downloaded)
+mediaOutFgSelected:                 mediaInFgSelected; // outbox selected media message status text (like in file that is being downloaded)
+
 // UNSORTED
 
-mediaInFg:                          msgInDateFg; // inbox media message status text (like in file that is being downloaded)
-mediaInFgSelected:                  msgInDateFgSelected; // inbox selected media message status text (like in file that is being downloaded)
-mediaOutFg:                         msgOutDateFg; // outbox media message status text (like in file that is being downloaded)
-mediaOutFgSelected:                 msgOutDateFgSelected; // outbox selected media message status text (like in file that is being downloaded)
 youtubePlayIconBg:                  #e83131c8; // youtube play icon background (when a link to a youtube video with a webpage preview is sent)
 youtubePlayIconFg:                  windowFgActive; // youtube play icon arrow (when a link to a youtube video with a webpage preview is sent)
 videoPlayIconBg:                    #0000007f; // other video play icon background (like when a link to a vimeo video with a webpage preview is sent)
