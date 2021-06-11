@@ -485,8 +485,8 @@ msgBotKbOverBgAdd:                  themeImageOverlay; // this is painted over a
 msgBotKbIconFg:                     themeSecondaryFg; // bot inline keyboard button icon in the top-right corner (like in @vote bot when a poll is ready to be shared)
 msgBotKbRippleBg:                   themeMessageBg; // bot inline keyboard button ripple effect
 
-botKbBg:                            #3d444b; // bot keyboard button background
-botKbDownBg:                        #494f55; // bot keyboard button ripple effect
+botKbBg:                            themeDark; // bot keyboard button background
+botKbDownBg:                        themeBg; // bot keyboard button ripple effect
 
 mediaInFg:                          themeSecondaryFg; // inbox media message status text (like in file that is being downloaded)
 mediaInFgSelected:                  themeActiveFg; // inbox selected media message status text (like in file that is being downloaded)
