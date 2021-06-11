@@ -526,14 +526,15 @@ historyComposeIconFgOver:           themeActiveFg; // history compose area icon 
 historySendIconFg:                  historyComposeIconFg; // send message icon
 historySendIconFgOver:              historyComposeIconFgOver; // send message icon with mouse over
 
-historyPinnedBg:                    themeBg; // pinned message area background
+historyPinnedBg:                    themeBg; // pinned messages area background
+
+historyReplyBg:                     historyComposeAreaBg; // reply / forward / edit message area background
+historyReplyIconFg:                 historyComposeIconFg; // reply / forward / edit message left icon
+historyReplyCancelFg:               historyComposeIconFg; // reply / forward / edit message cancel button
+historyReplyCancelFgOver:           historyComposeIconFgOver; // reply / forward / edit message cancel button with mouse over
 
 // UNSORTED
 
-historyReplyBg:                     historyComposeAreaBg; // reply / forward / edit message area background
-historyReplyIconFg:                 windowBgActive; // reply / forward / edit message left icon
-historyReplyCancelFg:               cancelIconFg; // reply / forward / edit message cancel button
-historyReplyCancelFgOver:           cancelIconFgOver; // reply / forward / edit message cancel button with mouse over
 historyComposeButtonBg:             historyComposeAreaBg; // unblock / join channel / mute channel button background
 historyComposeButtonBgOver:         #31363c; // unblock / join channel / mute channel button background with mouse over
 historyComposeButtonBgRipple:       #272b2f; // unblock / join channel / mute channel button ripple effect
