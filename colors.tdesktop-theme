@@ -548,7 +548,7 @@ msgFile4BgSelected:                 themeFadeBg; // yellow shared files without 
 
 overviewCheckBg:                    themeFadeBg; // shared files / links checkbox background for not selected rows when some rows are selected
 overviewCheckFg:                    themeSimpleFg; // shared files / links checkbox icon for not selected rows when some rows are selected
-overviewCheckBorder:                #e4eaef; // shared media round checkbox border
+overviewCheckBorder:                themeDark; // shared media round checkbox border
 overviewCheckFgActive:              themeActiveFg; // shared files / links checkbox icon for selected rows
 overviewPhotoSelectOverlay:         themeImageOverlay; // shared photos / videos / links fill for selected rows
 
