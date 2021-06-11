@@ -307,8 +307,8 @@ emojiPanBg:                         windowBg; // emoji panel background
 emojiPanCategories:                 emojiPanBg; // emoji panel categories background
 emojiPanHeaderFg:                   themeContrastFg; // emoji panel section header text
 
-emojiIconFg:                        #6c7278; // emoji category icon
-emojiIconFgActive:                  #4faf59; // active emoji category icon
+emojiIconFg:                        themeSecondaryFg; // emoji category icon
+emojiIconFgActive:                  themeContrastFg; // active emoji category icon
 
 // THIS VARIABLE DOESN'T MAKE ANY CHANGES
 
