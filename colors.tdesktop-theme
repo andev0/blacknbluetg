@@ -554,7 +554,7 @@ profileAdminStartFg:                themeContrastFg; // group members list admin
 profileVerifiedCheckBg:             themeContrastFg; // profile verified check icon background
 profileVerifiedCheckFg:             themeActiveFg; // profile verified check icon tick
 
-// NOTIFICATIONS EXAMPLE
+// SETTINGS
 
 notificationsBoxMonitorFg:          themeSecondaryFg; // custom notifications settings box monitor color
 notificationsBoxScreenBg:           themeBg; // custom notifications settings box monitor screen background
@@ -564,10 +564,11 @@ notificationSampleCloseFg:          themeContrastFg; // custom notifications set
 notificationSampleTextFg:           themeSimpleFg; // custom notifications settings box small sample text placeholder
 notificationSampleNameFg:           themeActiveFg; // custom notifications settings box small sample name placeholder
 
+changePhoneSimcardFrom:             themeSecondaryFg; // change phone number box left simcard icon
+changePhoneSimcardTo:               themeActiveFg; // change phone number box right simcard and plane icons
+
 // UNSORTED
 
-changePhoneSimcardFrom:             notificationSampleTextFg; // change phone number box left simcard icon
-changePhoneSimcardTo:               notificationSampleNameFg; // change phone number box right simcard and plane icons
 mainMenuBg:                         windowBg; // main menu background
 mainMenuCoverBg:                    themeDark; // main menu top cover background
 mainMenuCoverFg:                    windowFgActive; // main menu top cover text
