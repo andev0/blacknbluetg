@@ -518,15 +518,17 @@ historyToDownFg:                    themeSimpleFg; // arrow button icon
 historyToDownFgOver:                themeActiveFg; // arrow button icon with mouse over
 historyToDownShadow:                themeShadowColor; // arrow button shadow
 
+historyComposeAreaBg:               themeBg; // history compose area background (message write area / reply information / forwarding information)
+historyComposeAreaFg:               themeSimpleFg; // history compose area text
+historyComposeAreaFgService:        themeSecondaryFg; // history compose area text when replying to a media message
+historyComposeIconFg:               themeContrastFg; // history compose area icon (like emoji, attach, bot command..)
+historyComposeIconFgOver:           themeActiveFg; // history compose area icon with mouse over
+
+historySendIconFg:                  historyComposeIconFg; // send message icon
+historySendIconFgOver:              historyComposeIconFgOver; // send message icon with mouse over
+
 // UNSORTED
 
-historyComposeAreaBg:               #282e33; // history compose area background (message write area / reply information / forwarding information)
-historyComposeAreaFg:               historyTextInFg; // history compose area text
-historyComposeAreaFgService:        msgInDateFg; // history compose area text when replying to a media message
-historyComposeIconFg:               menuIconFg; // history compose area icon (like emoji, attach, bot command..)
-historyComposeIconFgOver:           menuIconFgOver; // history compose area icon with mouse over
-historySendIconFg:                  windowBgActive; // send message icon
-historySendIconFgOver:              windowBgActive; // send message icon with mouse over
 historyPinnedBg:                    historyComposeAreaBg; // pinned message area background
 historyReplyBg:                     historyComposeAreaBg; // reply / forward / edit message area background
 historyReplyIconFg:                 windowBgActive; // reply / forward / edit message left icon
