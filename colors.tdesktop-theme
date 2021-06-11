@@ -447,23 +447,6 @@ msgFileOutBg:                       msgFileInBg; // outbox audio file download c
 msgFileOutBgOver:                   msgFileInBgOver; // outbox audio file download circle background with mouse over
 msgFileOutBgSelected:               msgFileInBgSelected; // outbox selected audio file download circle background
 
-msgFile1Bg:                         themeBlue; // blue shared links / files without image square thumbnail
-msgFile1BgDark:                     themeFadeBg; // blue shared files without image download circle background
-msgFile1BgOver:                     themeFadeFg; // blue shared files without image download circle background with mouse over
-msgFile1BgSelected:                 themeFadeBg; // blue shared files without image download circle background if file is selected
-msgFile2Bg:                         themeGreen; // green shared links / shared files without image square thumbnail
-msgFile2BgDark:                     themeFadeBg; // green shared files without image download circle background
-msgFile2BgOver:                     themeFadeFg; // green shared files without image download circle background with mouse over
-msgFile2BgSelected:                 themeFadeBg; // green shared files without image download circle background if file is selected
-msgFile3Bg:                         themeRed; // red shared links / shared files without image square thumbnail
-msgFile3BgDark:                     themeFadeBg; // red shared files without image download circle background
-msgFile3BgOver:                     themeFadeFg; // red shared files without image download circle background with mouse over
-msgFile3BgSelected:                 themeFadeBg; // red shared files without image download circle background if file is selected
-msgFile4Bg:                         themeYellow; // yellow shared links / shared files without image square thumbnail
-msgFile4BgDark:                     themeFadeBg; // yellow shared files without image download circle background
-msgFile4BgOver:                     themeFadeFg; // yellow shared files without image download circle background with mouse over
-msgFile4BgSelected:                 themeFadeBg; // yellow shared files without image download circle background if file is selected
-
 historyFileInIconFg:                themeSimpleFg; // inbox file without thumbnail (like audio file) download arrow icon
 historyFileInIconFgSelected:        themeButtonBg; // inbox selected file without thumbnail (like audio file) download arrow icon
 historyFileInRadialFg:              themeSimpleFg; // inbox file without thumbnail (like audio file) radial download animation line
@@ -537,12 +520,32 @@ historyComposeButtonBg:             themeBg; // unblock / join channel / mute ch
 historyComposeButtonBgOver:         themeBgOver; // unblock / join channel / mute channel button background with mouse over
 historyComposeButtonBgRipple:       themeBg; // unblock / join channel / mute channel button ripple effect
 
+// SHARED MEDIA
+
+msgFile1Bg:                         themeBlue; // blue shared links / files without image square thumbnail
+msgFile1BgDark:                     themeFadeBg; // blue shared files without image download circle background
+msgFile1BgOver:                     themeFadeFg; // blue shared files without image download circle background with mouse over
+msgFile1BgSelected:                 themeFadeBg; // blue shared files without image download circle background if file is selected
+msgFile2Bg:                         themeGreen; // green shared links / shared files without image square thumbnail
+msgFile2BgDark:                     themeFadeBg; // green shared files without image download circle background
+msgFile2BgOver:                     themeFadeFg; // green shared files without image download circle background with mouse over
+msgFile2BgSelected:                 themeFadeBg; // green shared files without image download circle background if file is selected
+msgFile3Bg:                         themeRed; // red shared links / shared files without image square thumbnail
+msgFile3BgDark:                     themeFadeBg; // red shared files without image download circle background
+msgFile3BgOver:                     themeFadeFg; // red shared files without image download circle background with mouse over
+msgFile3BgSelected:                 themeFadeBg; // red shared files without image download circle background if file is selected
+msgFile4Bg:                         themeYellow; // yellow shared links / shared files without image square thumbnail
+msgFile4BgDark:                     themeFadeBg; // yellow shared files without image download circle background
+msgFile4BgOver:                     themeFadeFg; // yellow shared files without image download circle background with mouse over
+msgFile4BgSelected:                 themeFadeBg; // yellow shared files without image download circle background if file is selected
+
+overviewCheckBg:                    themeFadeBg; // shared files / links checkbox background for not selected rows when some rows are selected
+overviewCheckFg:                    themeSimpleFg; // shared files / links checkbox icon for not selected rows when some rows are selected
+overviewCheckFgActive:              themeActiveFg; // shared files / links checkbox icon for selected rows
+overviewPhotoSelectOverlay:         themeImageOverlay; // shared photos / videos / links fill for selected rows
+
 // UNSORTED
 
-overviewCheckBg:                    #00000040; // shared files / links checkbox background for not selected rows when some rows are selected
-overviewCheckFg:                    #ffffff; // shared files / links checkbox icon for not selected rows when some rows are selected
-overviewCheckFgActive:              #ffffff; // shared files / links checkbox icon for selected rows
-overviewPhotoSelectOverlay:         #40ace333; // shared photos / videos / links fill for selected rows
 profileStatusFgOver:                #9c9c9c; // group members list in group profile user last seen text with mouse over
 profileVerifiedCheckBg:             windowBgActive; // profile verified check icon background
 profileVerifiedCheckFg:             #ffffff; // profile verified check icon tick
