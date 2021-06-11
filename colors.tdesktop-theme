@@ -567,13 +567,19 @@ notificationSampleNameFg:           themeActiveFg; // custom notifications setti
 changePhoneSimcardFrom:             themeSecondaryFg; // change phone number box left simcard icon
 changePhoneSimcardTo:               themeActiveFg; // change phone number box right simcard and plane icons
 
-// UNSORTED
+// MAIN MENU
 
-mainMenuBg:                         windowBg; // main menu background
-mainMenuCoverBg:                    themeDark; // main menu top cover background
-mainMenuCoverFg:                    windowFgActive; // main menu top cover text
+mainMenuBg:                         themeBg; // main menu background
+mainMenuCoverBg:                    themeContrastFg; // main menu top cover background
+mainMenuCoverFg:                    themeSimpleFg; // main menu top cover text
+
+// ???
+
 mainMenuCloudFg:                    activeButtonFg; // 
 mainMenuCloudBg:                    themeButtonBg; // 
+
+// UNSORTED
+
 mediaPlayerBg:                      windowBg; // audio file player background
 mediaPlayerActiveFg:                windowBgActive; // audio file player playback progress already played part
 mediaPlayerInactiveFg:              sliderBgInactive; // audio file player playback progress upcoming (not played yet) part with mouse over
