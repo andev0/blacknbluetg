@@ -503,10 +503,11 @@ youtubePlayIconFg:                  themeActiveFg; // youtube play icon arrow (w
 videoPlayIconBg:                    themeFadeBg; // other video play icon background (like when a link to a vimeo video with a webpage preview is sent)
 videoPlayIconFg:                    themeActiveFg; // other video play icon arrow (like when a link to a vimeo video with a webpage preview is sent)
 
+toastBg:                            themeMessageBg; // toast notification background (like when you click on your t.me link when editing your username)
+toastFg:                            themeActiveFg; // toast notification text (like when you click on your t.me link when editing your username)
+
 // UNSORTED
 
-toastBg:                            #000000b2; // toast notification background (like when you click on your t.me link when editing your username)
-toastFg:                            windowFgActive; // toast notification text (like when you click on your t.me link when editing your username)
 reportSpamBg:                       #363c42; // report spam panel background (like a non contact user writes your for the first time)
 reportSpamFg:                       windowFg; // report spam panel text (when you send a report from that panel)
 historyToDownBg:                    #434d57; // arrow button background (to scroll to the end of the viewed chat)
