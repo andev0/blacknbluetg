@@ -130,15 +130,20 @@ smallCloseIconFgOver:               themeButtonBgOver; // small X icon with mous
 
 activeLineFg:                       themeContrastFg; // default active line (like code input field bottom border when you log in and field is focused)
 activeLineFgError:                  themeError; // default active line for error state (like code input field bottom border when you log in and you've entered incorrect code)
+
 placeholderFg:                      themeSecondaryFg; // default input field placeholder when field is not focused (like in phone input field when you log in)
-placeholderFgActive:                themeDark; // default input field placeholder when field is focused
+placeholderFgActive:                themeSecondaryFg; // default input field placeholder when field is focused
+
 inputBorderFg:                      themeSecondaryFg; // default input field bottom border (like in code input field when you log in and field is not focused)
+
+filterInputActiveBg:                themeDark; // default rounded input field active background (like in chats list search field when field is focused)
 filterInputBorderFg:                themeDark; // default rounded input field border (like in chats list search field when field is focused)
-filterInputInactiveBg:              themeDark; // default rounded input field background (like in chats list search field when field is inactive)
+filterInputInactiveBg:              themeBgOver; // default rounded input field background (like in chats list search field when field is inactive)
+
 checkboxFg:                         themeDark; // default unchecked checkbox rounded rectangle (and also emoji category icons)
+
 sliderBgInactive:                   themeDark; // default slider not active bar (like in Settings when you choose interface scale or custom notifications count)
 sliderBgActive:                     windowBgActive; // default slider active bar (like in Settings when you choose interface scale or custom notifications count)
-filterInputActiveBg:                #3d444b; // default rounded input field active background (like in chats list search field when field is focused)
 
 // TOOLTIP
 
