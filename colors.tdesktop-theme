@@ -544,12 +544,18 @@ overviewCheckFg:                    themeSimpleFg; // shared files / links check
 overviewCheckFgActive:              themeActiveFg; // shared files / links checkbox icon for selected rows
 overviewPhotoSelectOverlay:         themeImageOverlay; // shared photos / videos / links fill for selected rows
 
+// GROUP MENU
+
+profileStatusFgOver:                themeActiveFg; // group members list in group profile user last seen text with mouse over
+profileAdminStartFg:                themeContrastFg; // group members list admin star icon
+
+// VERIFIED PROFILE
+
+profileVerifiedCheckBg:             themeContrastFg; // profile verified check icon background
+profileVerifiedCheckFg:             themeActiveFg; // profile verified check icon tick
+
 // UNSORTED
 
-profileStatusFgOver:                #9c9c9c; // group members list in group profile user last seen text with mouse over
-profileVerifiedCheckBg:             windowBgActive; // profile verified check icon background
-profileVerifiedCheckFg:             #ffffff; // profile verified check icon tick
-profileAdminStartFg:                windowBgActive; // group members list admin star icon
 notificationsBoxMonitorFg:          windowFg; // custom notifications settings box monitor color
 notificationsBoxScreenBg:           dialogsBgActive; // #6389a8; // custom notifications settings box monitor screen background
 notificationSampleUserpicFg:        windowBgActive; // custom notifications settings box small sample userpic placeholder
