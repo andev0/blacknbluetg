@@ -506,16 +506,20 @@ videoPlayIconFg:                    themeActiveFg; // other video play icon arro
 toastBg:                            themeMessageBg; // toast notification background (like when you click on your t.me link when editing your username)
 toastFg:                            themeActiveFg; // toast notification text (like when you click on your t.me link when editing your username)
 
-// UNSORTED
+// TODO
 
 reportSpamBg:                       #363c42; // report spam panel background (like a non contact user writes your for the first time)
 reportSpamFg:                       windowFg; // report spam panel text (when you send a report from that panel)
-historyToDownBg:                    #434d57; // arrow button background (to scroll to the end of the viewed chat)
-historyToDownBgOver:                #515b65; // arrow button background with mouse over
-historyToDownBgRipple:              #636d77; // arrow button ripple effect
-historyToDownFg:                    #adb4ba; // arrow button icon
-historyToDownFgOver:                menuIconFgOver; // arrow button icon with mouse over
-historyToDownShadow:                #00000040; // arrow button shadow
+
+historyToDownBg:                    themeBg; // arrow button background (to scroll to the end of the viewed chat)
+historyToDownBgOver:                themeBgOver; // arrow button background with mouse over
+historyToDownBgRipple:              themeBg; // arrow button ripple effect
+historyToDownFg:                    themeSimpleFg; // arrow button icon
+historyToDownFgOver:                themeActiveFg; // arrow button icon with mouse over
+historyToDownShadow:                themeShadowColor; // arrow button shadow
+
+// UNSORTED
+
 historyComposeAreaBg:               #282e33; // history compose area background (message write area / reply information / forwarding information)
 historyComposeAreaFg:               historyTextInFg; // history compose area text
 historyComposeAreaFgService:        msgInDateFg; // history compose area text when replying to a media message
