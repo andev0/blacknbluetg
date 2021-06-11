@@ -523,13 +523,13 @@ historyComposeAreaFg:               themeSimpleFg; // history compose area text
 historyComposeAreaFgService:        themeSecondaryFg; // history compose area text when replying to a media message
 historyComposeIconFg:               themeContrastFg; // history compose area icon (like emoji, attach, bot command..)
 historyComposeIconFgOver:           themeActiveFg; // history compose area icon with mouse over
-
 historySendIconFg:                  historyComposeIconFg; // send message icon
 historySendIconFgOver:              historyComposeIconFgOver; // send message icon with mouse over
 
+historyPinnedBg:                    themeBg; // pinned message area background
+
 // UNSORTED
 
-historyPinnedBg:                    historyComposeAreaBg; // pinned message area background
 historyReplyBg:                     historyComposeAreaBg; // reply / forward / edit message area background
 historyReplyIconFg:                 windowBgActive; // reply / forward / edit message left icon
 historyReplyCancelFg:               cancelIconFg; // reply / forward / edit message cancel button
